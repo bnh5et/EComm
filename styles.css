@@ -1,0 +1,70 @@
+div.background {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 60px 100px;
+    height: 100vh;
+    overflow: scroll;
+}
+
+div.home-page {
+    color: slategray;
+}
+
+div.home-page div.page-details {
+    padding: 20px;
+}
+
+div.home-page div.page-details p {
+    display: inline-block;
+}
+
+div.home-page #textbook-overlay {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+div.home-page #textbook-overlay img {
+    max-width: 100%;
+}
+
+div.main-panel {
+    margin: 0;
+    height: auto;
+    box-shadow: 0px 0px 5px #888888;
+    background-color: white;
+    /*overflow: scroll;*/
+}
+
+div.main-panel .logo {
+    display: block;
+    margin: auto;
+    height: auto;
+    width: auto;
+    max-height: 150px;
+    max-width: 150px;
+}
+
+nav {
+    width: 100%;
+    background-color: slategray;
+    height: 50px;
+    display: table;
+}
+
+nav a {
+    color: white;
+    width: 20%;
+    height: inherit;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
