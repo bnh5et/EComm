@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../texttrade/.idea/my-proj.iml" filepath="$PROJECT_DIR$/../texttrade/.idea/my-proj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/my-proj.iml" filepath="$PROJECT_DIR$/.idea/my-proj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/texttrade.iml" filepath="$PROJECT_DIR$/.idea/texttrade.iml" />
     </modules>
   </component>
 </project>
