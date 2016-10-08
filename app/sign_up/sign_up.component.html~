@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="script.js" async></script><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="signup-page">
+<h4>Sign up today to enjoy great benefits from Textrade and start saving on textbooks!</h4>
+<form method="post" action="http://localhost:8080/Milestone2/formHandler">
+<h1>Name:</h1><input type="text" id="name" size="50">
+<h1>Email Address:</h1><textarea name="emailAddress" cols="51" rows="5">
+<h1>Username:</h1><textarea name="userName" cols="51" rows="5">
+<h1>Password:</h1><textarea name="passWord" cols="51" rows="5">
+<h1>Confirm Password:</h1><textarea name="confirm" cols="51" rows="5">
+<h1>Credit Card Number:</h1><textarea name="creditCard" cols="51" rows="5">
+<input type="dropdown" name="ccType">Visa, MasterCard, American Express, Discover</input>
+<h1>Expiration Date:</h1><textarea name="expiration" cols="51" rows="5">
+<h1>Security Code:</h1><textarea name="security" cols="51" rows="5">
+<input type="button" id="submit" value="Submit" size="50">
+</form>
+</div>
+</body>
+</html>
