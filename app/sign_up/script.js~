@@ -1,0 +1,19 @@
+function isEmpty(){
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value; 
+    var address = document.getElementById("address").value;
+    var city = document.getElementbyId("city").value;
+    var state = document.getElementById("state").value;
+    var confirm = document.getElementById("confirm").value;
+    var ccNumber = document.getElementById("ccNumber").value;
+    var ccType = document.getElementById("ccType").value;
+    var expiration = document.getElementById("expiration").value;
+    var securityCode = document.getElementById("security").value;
+    if((name || email || username || password || address
+       || city || state || confirm || ccNumber || ccType || expiration
+	|| securityCode) == ""){
+	alert ("Please complete all fields.");
+    }
+}
