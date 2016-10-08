@@ -1,0 +1,150 @@
+/*Received assistance from http://www.w3schools.com/howto/howto_js_dropdown.asp*/
+.block-design {
+    background-color: slategray;
+    width: 100%;
+    height: 30px;
+}
+
+button {
+    background-color: slategray;
+    padding: 20px 40px;
+    color: white;
+    border: none;
+}
+
+.button-container {
+    text-align: center;
+}
+
+div.background {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 60px 100px;
+    height: 100vh;
+    overflow: scroll;
+}
+
+#left-panel {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+#right-panel {
+    width: 50%;
+    float: right;
+}
+
+div.aboutus-page {
+    padding: 50px;
+    color: slategray;
+}
+
+div.aboutus-page div.info-box {
+    border: 4px solid gold;
+    width: calc(50% - 30px);
+    margin: 20px;
+    padding: 10px;
+    height: auto;
+    display: block;
+}
+
+div.aboutus-page div.person-info-box {
+    width: 33%;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+div.aboutus-page div.person-info-box img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px;
+    overflow: hidden;
+}
+
+div.signup-page {
+    padding:50px;
+    color:slategray;
+}
+
+div.signup-page div.page-details p {
+     display: inline-block;
+}
+div.home-page {
+    color: slategray;
+}
+
+div.home-page div.page-details {
+    padding: 50px;
+}
+
+div.home-page div.page-details p {
+    display: inline-block;
+}
+
+div.home-page #textbook-overlay {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+div.home-page #textbook-overlay img {
+    max-width: 100%;
+}
+
+div.main-panel {
+    margin: 0;
+    height: auto;
+    box-shadow: 0 0 5px #888888;
+    background-color: white;
+}
+
+div.main-panel .logo {
+    display: block;
+    margin: auto;
+    height: auto;
+    width: auto;
+    max-height: 150px;
+    max-width: 150px;
+}
+
+nav {
+    width: 100%;
+    background-color: slategray;
+    height: 60px;
+    display: table;
+    table-layout: fixed;
+}
+
+nav a {
+    color: white;
+    width: 2%;
+    height: inherit;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+nav a:focus,
+nav a:active {
+    color: black;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.show {
+        display:block;
+}
