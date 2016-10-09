@@ -99,14 +99,13 @@ $security = $_POST['security'];
 
 $ecomm = "USE ecomm;";
 if ($conn->query($ecomm) === TRUE) {
-    echo "Database is in usage.";
     if ($validform == False) {
 		echo "Not a valid form. Sorry. Go back.";
 	}
 	else {
 		$sql = "INSERT INTO user (username, firstname, lastname, email, address, city, state) VALUES ('$username', '$firstname', '$lastname', '$email', '$address', '$city', '$state');";
 		if ($conn->query($sql) === TRUE) {
-			echo "Successful insert!";
+			echo "You have been registered! Welcome aboard, $firstname!";
 		}
 		else {
 			echo "Could not insert the data." . $conn->error;
