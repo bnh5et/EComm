@@ -57,5 +57,6 @@ $radio = $_POST['vote'];
 $exp = $_POST['exp'];
 $security = $_POST['security'];
 
+echo $firstname;
 echo "Connected successfully";
 ?> 

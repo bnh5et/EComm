@@ -9,22 +9,22 @@ http://www.w3schools.com/howto/howto_js_dropdown.asp-->
 		<div class="signup-page">
 			<h4>Sign up today to enjoy great benefits from Textrade and start saving on textbooks!</h4>
 			<form action="createNewAccount.php" method="post" onsubmit="return ccNumber()">
-				<p>Name:</p><input type="text" id="name" size="50"></input>
-				<p>Email Address:</p><input type="text" id="email" size="50"></input>
-				<p>Username:</p><input type="text" id="username" size="50"></input>
-				<p>Password:</p><input type="text" id="password" size="50"></input>
-				<p>Confirm Password:</p><input type="password2" id="name" size="50"></input>
-				<p>Address:</p><input type="text" id="address" size="50"></input>
-				<p>City:</p><input type="text" id="city" size="50"></input>
-				<p>State:</p><input type="text" id="state" size="50"></input>
-				<p>Credit Card Number:</p><input type="creditcard" id="ccNumber" size="50" onChange="return ccNumber()">
+				<p>Name:</p><input type="text" name="name" id="name" size="50"></input>
+				<p>Email Address:</p><input type="text" name="email" id="email" size="50"></input>
+				<p>Username:</p><input type="text" name="username" id="username" size="50"></input>
+				<p>Password:</p><input type="text" name="password" id="password" size="50"></input>
+				<p>Confirm Password:</p><input type="text" name="password2" id="password2" size="50"></input>
+				<p>Address:</p><input type="text" name="address" id="address" size="50"></input>
+				<p>City:</p><input type="text" name="city" id="city" size="50"></input>
+				<p>State:</p><input type="text" name="state" id="state" size="50"></input>
+				<p>Credit Card Number:</p><input type="creditcard" name="ccNumber" id="ccNumber" size="50" onChange="return ccNumber()">
 				<p>Credit Card Type:</p>
 				<input type="radio" name="vote" value="Visa">Visa</input>
 				<input type="radio" name="vote" value="Discover">Discover</input>
 				<input type="radio" name="vote" value="American Express">American Express</input>
 				<input type="radio" name="vote" value="MasterCard">MasterCard</input>
-				<p>Expiration Date:</p><input type="text" id="name" size="50"></input>
-				<p>Security Code:</p><input type="text" id="name" size="50"></input>
+				<p>Expiration Date:</p><input type="text" name="exp" id="exp" size="50"></input>
+				<p>Security Code:</p><input type="text" name="security" id="name" size="50"></input>
 				<input type="Submit" value="Submit" size="50" onClick="return isEmpty()">
 			</form>
 		</div>
