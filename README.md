@@ -1,4 +1,4 @@
-###TextTrade##
+###TextTrade###
 ##Database Instructions##
 The reason why we are using the root account of MySQL is because so far, we haven't created any database users with restricted access rights. We will fix this later. Until then, be careful because our database is not secure.
 #Creating your database#
