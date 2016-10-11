@@ -4,7 +4,7 @@ The reason why we are using the root account of MySQL is because so far, we have
 #Creating your database#
 1. As soon as you downloaded XAMPP, start MySQL.
 2. Open the shell for MySQL.
-3. Type in the command: "mysql -u root -p"
+3. Type in the command: "mysql -u root -p" (command is "/Applications/xampp/xamppfiles/bin/mysql -u root -p" if using XAMPP on mac).
 4. When the prompt requests your password, just press enter.
 5. You are now in the MySQL command. Type in "create database ecomm;"
 6. Done. You have created your database. Type "exit" to exit MySQL.
