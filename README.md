@@ -17,5 +17,5 @@ The reason why we are using the root account of MySQL is because so far, we have
 #Pushing your changes onto db.sql#
 1. Start XAMPP, and press the "Start" button for MySQL
 2. Open the shell for MySQL and cd into the directory of your Github repository
-3. Type the command: "mysqldump -u root -p > db.sql"
+3. Type the command: "mysqldump -u root -p ecomm > db.sql"
 4. You have updated the shared database.
