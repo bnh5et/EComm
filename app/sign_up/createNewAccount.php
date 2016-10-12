@@ -137,8 +137,9 @@ if ($conn->query($ecomm) === TRUE) {
     echo "Error using database. " . $conn->error;
 }
 
-
-
-//echo "Connected successfully";
-
 ?> 
+<html>
+<form action="sign_up.component.html">
+    <input type="submit" value="Back" />
+</form>
+</html>
