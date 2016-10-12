@@ -30,7 +30,10 @@ CREATE TABLE `user` (
   `address` varchar(255) DEFAULT NULL,
   `city` varchar(255) DEFAULT NULL,
   `state` varchar(2) DEFAULT NULL,
-  `zip` int(10) DEFAULT NULL
+  `zip` int(10) DEFAULT NULL,
+  `ccNumber` int(20) DEFAULT NULL,
+  `exp` date DEFAULT NULL,
+  `security` int(3) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -40,7 +43,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES ('Woahnelly','Amber','Lee','ajl4cf@virginia.edu','','','MD',NULL);
+INSERT INTO `user` VALUES ('Woahnelly','Amber','Lee','ajl4cf@virginia.edu','','','MD',NULL,NULL,NULL,NULL),('turdymcturdface','Turdy','McTurdFace','turd@yahoo.com','','','VT',NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-09 11:57:19
+-- Dump completed on 2016-10-11 20:32:17
