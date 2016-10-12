@@ -68,9 +68,21 @@ else {
 	}
 }
 
-//I'm not sure about how to check if a credit card number is valid.
+//I'm not sure about how to check if a credit card number is valid. However, checking that all sixteen characters are digits should suffice for now.
 $ccNumber = $_POST['ccNumber'];
-
+$ccNumbers = str_split($ccNumber);
+if (count($ccNumbers) != 16) {
+	$validform = False;
+	echo "Credit card does not contain enough digits";
+}
+else {
+	for ($i = 0; $i < 16; $i++) {
+		if (!is_numeric($ccNumbers[$i])) {
+			$validform = False;
+			echo "The character $ccNumbers[$i] cannot be a digit in a credit card.";
+		}
+	}
+}
 //Check if expiration date is in the format 5/25
 $exp = $_POST['exp'];
 $monthday = explode("/", $exp);
@@ -93,9 +105,19 @@ else {
 	echo "Please format the date as MM/YY, please. \n";
 }
 
-
+//Checks that the security code is 3 numbers.
 $security = $_POST['security'];
-
+$securitynums = str_split($security);
+if (count($securitynums) != 3) {
+	echo "Security code must be three digits. ";
+}
+else {
+	for ($i = 0; $i < 3; $i++) {
+		if (!is_numeric($securitynums[$i])) {
+			echo "The character $securitynums[$i] cannot be a digit in a security code. ";
+		}
+	}
+}
 
 $ecomm = "USE ecomm;";
 if ($conn->query($ecomm) === TRUE) {
