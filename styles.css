@@ -102,6 +102,10 @@ div.main-panel .logo {
     max-width: 150px;
 }
 
+div.signup-page {
+    padding: 20px;
+}
+
 nav {
     width: 100%;
     background-color: slategray;
