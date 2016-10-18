@@ -15,6 +15,17 @@ if ($conn->connect_error) {
 $validform = True;
 
 //Is the name valid?
+$numchecker = str_split($_POST['name']);
+for ($i = 0; $i <= count($numchecker)-1; $i++) {
+	if (is_numeric($numchecker[$i])) {
+		$validform = False;
+		echo "Cannot have numbers in your name.";
+	}
+	if (preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $numchecker[$i])) {
+		$validform = False;
+		echo "Cannot have special characters in your name.";
+	}
+}
 $name = explode(" ", $_POST['name']);
 $firstname = $name[0];
 $lastname = "";
@@ -29,9 +40,15 @@ $at = "";
 $period = "";
 for ($i = 0; $i <= count($emailarray)-1; $i++) {
 	if ($emailarray[$i] == "@") {	
-		$at = "@";
+		if ($at == "@") {
+			$validform = False;
+			echo "Email address is not formatted correctly.";
+		}
+		else {
+			$at = "@";
+		}
 	}
-	if ($emailarray[$i] == ".") {
+	if ($at == "@" & $emailarray[$i] == ".") {
 		$period = ".";	
 	}
 }
@@ -52,8 +69,37 @@ if (strcmp($password, $password2) != 0) {
 }
 
 $address = $_POST['address'];
+$addresscomponents = explode(" ", $address);
+if (count($addresscomponents) < 2) {
+	$validform = False;
+	echo "Address needs both the street number and street name.";
+}
+else {
+	if (is_numeric($addresscomponents[0])) {
+		for ($i = 1; $i < count($addresscomponents) - 1; $i++) {
+			if (preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $addresscomponents[$i])) {
+				$validform = False;
+				echo "Cannot have special characters in street address.";
+			}
+			$streetaddresscharacters = str_split($addresscomponents[$i]);
+			for ($j = 0; $j < count($streetaddresscharacters) - 1; $j++) {
+				if (is_numeric($streetaddresscharacters[$j])) {
+					$validform = False;
+					echo "Cannot have numbers in street address.";
+				}
+			}
+		}
+	}
+	else {
+		$validform = False;
+		echo "Address does not contain a street number.";
+	}
+}
 $city = $_POST['city'];
-
+$citycharacters = str_split($city);
+if (count($citycharacters) == 1) {
+	echo "Please enter full city name.";
+}
 //Is the state valid?
 $state = $_POST['state'];
 $stateinitials = str_split($state);
