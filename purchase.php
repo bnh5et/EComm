@@ -64,7 +64,7 @@
                  <input type="text" name="csrf" value="<?php echo($_SESSION['csrf']);?>" hidden readonly/>
                  <table>
                     <!-- Item Details - Actual values set in apiCallsData.php -->
-                     <tr><td>Camera </td><td><input class="form-control" type="text" name="camera_amount" value="300" readonly></input></td></tr>
+                     <tr><td>Textbook </td><td><input class="form-control" type="text" name="camera_amount" value="300" readonly></input></td></tr>
                      <tr><td>Tax </td><td><input class="form-control" type="text" name="tax" value="5" readonly></input> </td></tr>
                      <tr><td>Insurance </td><td><input class="form-control" type="text" name="insurance" value="10" readonly></input> </td></tr>
                      <tr><td>Handling Fee </td><td><input class="form-control" type="text" name="handling_fee" value="5" readonly></input> </td></tr>
