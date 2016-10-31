@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18c13dd-817f-4790-b768-3abbcbf54d5c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/footer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/header.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/about_us.component.html" afterPath="$PROJECT_DIR$/about_us.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/home.component.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sign_up.component.html" afterPath="$PROJECT_DIR$/sign_up.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cancel.php" afterPath="$PROJECT_DIR$/cancel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/createNewAccount.php" afterPath="$PROJECT_DIR$/createNewAccount.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/error.php" afterPath="$PROJECT_DIR$/error.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay.php" afterPath="$PROJECT_DIR$/pay.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placeOrder.php" afterPath="$PROJECT_DIR$/placeOrder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/purchase.html" afterPath="$PROJECT_DIR$/purchase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/purchase.php" afterPath="$PROJECT_DIR$/purchase.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shipping.php" afterPath="$PROJECT_DIR$/shipping.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startPayment.php" afterPath="$PROJECT_DIR$/startPayment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sign_up.html" afterPath="$PROJECT_DIR$/sign_up.html" />
     </list>
     <ignored path="my-proj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,11 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="createNewAccount.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/createNewAccount.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="92" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="purchase.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/purchase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+            <state relative-caret-position="1245">
+              <caret line="83" column="45" selection-start-line="83" selection-start-column="45" selection-end-line="83" selection-end-column="45" />
               <folding>
                 <marker date="1477923074000" expanded="false" signature="3274:3290" ph="..." />
               </folding>
@@ -52,35 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cancel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cancel.php">
+      <file leaf-file-name="shipping.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shipping.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-              <folding>
-                <element signature="e#10#47#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sign_up.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sign_up.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="113" selection-start-line="39" selection-start-column="113" selection-end-line="39" selection-end-column="113" />
-              <folding>
-                <element signature="n#style#0;n#input#15;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about_us.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about_us.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="5085">
+              <caret line="341" column="18" selection-start-line="341" selection-start-column="18" selection-end-line="341" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -136,13 +110,13 @@
         <option value="$PROJECT_DIR$/sign_up.component.html" />
         <option value="$PROJECT_DIR$/pay.php" />
         <option value="$PROJECT_DIR$/placeOrder.php" />
-        <option value="$PROJECT_DIR$/shipping.php" />
         <option value="$PROJECT_DIR$/error.php" />
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/purchase.php" />
         <option value="$PROJECT_DIR$/startPayment.php" />
-        <option value="$PROJECT_DIR$/cancel.php" />
         <option value="$PROJECT_DIR$/sign_up.html" />
+        <option value="$PROJECT_DIR$/cancel.php" />
+        <option value="$PROJECT_DIR$/shipping.php" />
       </list>
     </option>
   </component>
@@ -301,7 +275,7 @@
       <workItem from="1476417380555" duration="106000" />
       <workItem from="1476724862471" duration="180000" />
       <workItem from="1476726053634" duration="518000" />
-      <workItem from="1477872748851" duration="4153000" />
+      <workItem from="1477872748851" duration="4988000" />
     </task>
     <task id="LOCAL-00001" summary="Template with about us and home page">
       <created>1474334335812</created>
@@ -317,17 +291,24 @@
       <option name="project" value="LOCAL" />
       <updated>1477922216581</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Random bug fixes, removes currency field, deletes header and footer">
+      <created>1477923630696</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1477923630696</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36662000" />
+    <option name="totallyTimeSpent" value="37497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="23" width="1389" height="857" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.017766498" sideWeight="0.49710983" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.017766498" sideWeight="0.49710983" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19222462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -364,7 +345,8 @@
     <MESSAGE value="Template with about us and home page" />
     <MESSAGE value="Milestone 2" />
     <MESSAGE value="Included navigating and cleaned up purchase form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Included navigating and cleaned up purchase form" />
+    <MESSAGE value="Random bug fixes, removes currency field, deletes header and footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Random bug fixes, removes currency field, deletes header and footer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -469,14 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createNewAccount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="12" column="92" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/artificialintelligence.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -506,26 +480,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1331">
-          <caret line="105" column="18" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shipping.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5250">
-          <caret line="352" column="0" selection-start-line="352" selection-start-column="0" selection-end-line="352" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -570,6 +528,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1331">
+          <caret line="105" column="18" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cancel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding>
+            <element signature="e#10#47#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about_us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/startPayment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -580,39 +564,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/purchase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        <state relative-caret-position="1245">
+          <caret line="83" column="45" selection-start-line="83" selection-start-column="45" selection-end-line="83" selection-end-column="45" />
           <folding>
             <marker date="1477923074000" expanded="false" signature="3274:3290" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about_us.html">
+    <entry file="file://$PROJECT_DIR$/sign_up.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#input#15;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shipping.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5085">
+          <caret line="341" column="18" selection-start-line="341" selection-start-column="18" selection-end-line="341" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cancel.php">
+    <entry file="file://$PROJECT_DIR$/createNewAccount.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-          <folding>
-            <element signature="e#10#47#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sign_up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="113" selection-start-line="39" selection-start-column="113" selection-end-line="39" selection-end-column="113" />
-          <folding>
-            <element signature="n#style#0;n#input#15;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="12" column="92" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="92" />
+          <folding />
         </state>
       </provider>
     </entry>
