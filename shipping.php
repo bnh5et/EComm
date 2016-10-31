@@ -5,7 +5,6 @@
     if (session_id() == "")
         session_start();
 
-    include('header.php');
     include('paypalConfig.php');
 
         if(SANDBOX_FLAG) {
@@ -351,5 +350,4 @@
          </script>
          <script src="//www.paypalobjects.com/api/checkout.js" async></script>
 <?php
-    include('footer.php');
 ?>

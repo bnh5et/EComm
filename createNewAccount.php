@@ -179,7 +179,7 @@ if ($conn->query($ecomm) === TRUE) {
 
 ?> 
 <html>
-<form action="sign_up.component.html">
+<form action="sign_up.html">
     <input type="submit" value="Back" />
 </form>
 </html>

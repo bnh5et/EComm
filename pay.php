@@ -57,7 +57,6 @@
     $postalCode = filter_var($json_response['payer']['payer_info']['shipping_address']['postal_code'],FILTER_SANITIZE_SPECIAL_CHARS);
     $countryCode= filter_var($json_response['payer']['payer_info']['shipping_address']['country_code'],FILTER_SANITIZE_SPECIAL_CHARS);
 	
-    include('header.php');
 ?>
     <div class="row">
         <div class="col-md-4"></div>
@@ -87,6 +86,5 @@
                session_unset();
                session_destroy();
             }
-    include('footer.php');
 ?>
 
