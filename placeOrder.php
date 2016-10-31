@@ -5,7 +5,6 @@
     if (session_id() == "")
         session_start();
 
-    include('header.php');
     include('utilFunctions.php');
     include('paypalFunctions.php');
 
@@ -56,5 +55,4 @@
         <div class="col-md-4"></div>
     </div>
 <?php
-    include('footer.php');
 ?>
