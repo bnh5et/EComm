@@ -108,6 +108,20 @@ if (count($stateinitials) != 2) {
 	echo "State field is invalid."."<br>";
 }
 
+$zip = $_POST['zip'];
+$zipcharacters = str_split($zip);
+if (count($zipcharacters) != 5) {
+	$validform = False;
+	echo "Not a valid zip code."."<br>";
+}
+else {
+	for ($i = 0; $i < 5; $i++) {
+		if (!is_numeric($zipcharacters[$i])) {
+			$validform = False;
+			echo "Zip code must only consist of numbers."."<br>";
+		}
+	}
+}
 //I'm not sure about how to check if a credit card number is valid. However, checking that all sixteen characters are digits should suffice for now.
 $ccNumber = $_POST['ccNumber'];
 $ccNumbers = str_split($ccNumber);
@@ -166,7 +180,7 @@ if ($conn->query($ecomm) === TRUE) {
 	}
 	else {
 		$creditcardnumber = (int) $ccNumber;
-		$sql = "INSERT INTO user (username, firstname, lastname, email, address, city, state, ccNumber, exp, security) VALUES ('$username', '$firstname', '$lastname', '$email', '$address', '$city', '$state', '$ccNumber', '$exp', '$security');";
+		$sql = "INSERT INTO user (username, firstname, lastname, email, address, city, state, zip, ccNumber, exp, security) VALUES ('$username', '$firstname', '$lastname', '$email', '$address', '$city', '$state', '$zip', $ccNumber', '$exp', '$security');";
 		if ($conn->query($sql) === TRUE) {
 			echo "You have been registered! Welcome aboard, $firstname!";
 		}
