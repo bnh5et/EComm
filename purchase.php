@@ -2,7 +2,7 @@
     /*
         * Home Page - has Sample Buyer credentials, Camera (Product) Details and Instructiosn for using the code sample
     */
-    //include('apiCallsData.php');
+    include('apiCallsData.php');
     //include('header.php');
     include('paypalConfig.php');
 
