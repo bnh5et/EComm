@@ -165,9 +165,11 @@ if ($conn->query($ecomm) === TRUE) {
 		echo "Not a valid form. Sorry. Go back.";
 	}
 	else {
-		$sql = "INSERT INTO user (username, firstname, lastname, email, address, city, state) VALUES ('$username', '$firstname', '$lastname', '$email', '$address', '$city', '$state');";
+		$creditcardnumber = (int) $ccNumber;
+		$sql = "INSERT INTO user (username, firstname, lastname, email, address, city, state, ccNumber, exp, security) VALUES ('$username', '$firstname', '$lastname', '$email', '$address', '$city', '$state', '" . $creditcardnumber . "', '$exp', '$security');";
 		if ($conn->query($sql) === TRUE) {
 			echo "You have been registered! Welcome aboard, $firstname!";
+			echo $creditcardnumber;
 		}
 		else {
 			echo "Could not insert the data." . $conn->error;
