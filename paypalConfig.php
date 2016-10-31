@@ -14,16 +14,16 @@
     define("MERCHANT_ID","E9GCL5FX4TU2C");
 
     //PayPal REST App SANDBOX Client Id and Client Secret
-    define("SANDBOX_CLIENT_ID" , "AZazaq902xcELwoNkYxhzsbbdIX-jShBHYnKT0d43ODzXRvHdwkdjubUXO9yR20kYlVAFabTsZJuhKmM");
-    define("SANDBOX_CLIENT_SECRET", "EEsK8Bs1NKdA7VCxwO2tR1uMtUV5hhboEHKMR5HBkEa44rlJyeUlr7T12D5B1cMc2hqZ2daEVTOk6tWx");
+    define("SANDBOX_CLIENT_ID" , "AV1tOHhU7Bg2dqaG_s5lQnQ22h46RpLGcpJisi8RcLy4TfMslEHSQGXsMf-8w5x_E1FbsIj_w8bDl5NX");
+    define("SANDBOX_CLIENT_SECRET", "EAT3KQyounCul-DWUW6S8sPR0851iZfgcWj2Hw3RJ9Y-ijMbA2ldMG__ujWBXQiXSU3cxpfBTT36kUlk");
 
     //Environments -Sandbox and Production/Live
     define("SANDBOX_ENV", "sandbox");
     define("LIVE_ENV", "production");
 
     //PayPal REST App SANDBOX Client Id and Client Secret
-    define("LIVE_CLIENT_ID" , "live_Client_Id");
-    define("LIVE_CLIENT_SECRET" , "live_Client_Secret");
+    define("LIVE_CLIENT_ID" , "AV1tOHhU7Bg2dqaG_s5lQnQ22h46RpLGcpJisi8RcLy4TfMslEHSQGXsMf-8w5x_E1FbsIj_w8bDl5NX");
+    define("LIVE_CLIENT_SECRET" , "EAT3KQyounCul-DWUW6S8sPR0851iZfgcWj2Hw3RJ9Y-ijMbA2ldMG__ujWBXQiXSU3cxpfBTT36kUlk");
 
     //ButtonSource Tracker Code
     define("SBN_CODE","PP-DemoPortal-EC-IC-php-REST");

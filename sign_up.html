@@ -11,7 +11,6 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="styles.css">
-	<script src="script.js" async></script>
 </head>
 <body>
 <div class="background">
@@ -46,7 +45,7 @@
 				<p></p>
 				<div class="form-group">
 					<label for="state">State:</label>
-					<select class="form-control" id="state" style="max-height: 50px; max-width: 400px;">
+					<select class="form-control" name="state" id="state" style="max-height: 50px; max-width: 400px;">
 						<option value="AL">Alabama</option>
 						<option value="AK">Alaska</option>
 						<option value="AZ">Arizona</option>
@@ -109,7 +108,7 @@
 				<p></p>
 				<p>Security Code:</p><input type="text" name="security" id="name" size="50">
 				<p></p>
-				<input type="Submit" value="Submit" size="50" onClick="return isEmpty()" style="display: block">
+				<input type="Submit" value="Submit">
 			</form>
 		</div>
 

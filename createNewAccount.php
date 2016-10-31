@@ -39,7 +39,7 @@ $emailarray = str_split($email);
 $at = "";
 $period = "";
 for ($i = 0; $i <= count($emailarray)-1; $i++) {
-	if ($emailarray[$i] == "@") {	
+	if ($emailarray[$i] == "@") {
 		if ($at == "@") {
 			$validform = False;
 			echo "Email address is not formatted correctly.";
@@ -49,7 +49,7 @@ for ($i = 0; $i <= count($emailarray)-1; $i++) {
 		}
 	}
 	if ($at == "@" & $emailarray[$i] == ".") {
-		$period = ".";	
+		$period = ".";
 	}
 }
 if (($at == "") | ($period == "")) {
@@ -72,41 +72,36 @@ $address = $_POST['address'];
 $addresscomponents = explode(" ", $address);
 if (count($addresscomponents) < 2) {
 	$validform = False;
-	echo "Address needs both the street number and street name.";
+	echo "Address needs both the street number and street name."."<br>";
 }
 else {
 	if (is_numeric($addresscomponents[0])) {
 		for ($i = 1; $i < count($addresscomponents) - 1; $i++) {
 			if (preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $addresscomponents[$i])) {
 				$validform = False;
-				echo "Cannot have special characters in street address.";
+				echo "Cannot have special characters in street address."."<br>";
 			}
 			$streetaddresscharacters = str_split($addresscomponents[$i]);
 			for ($j = 0; $j < count($streetaddresscharacters) - 1; $j++) {
 				if (is_numeric($streetaddresscharacters[$j])) {
 					$validform = False;
-					echo "Cannot have numbers in street address.";
+					echo "Cannot have numbers in street address."."<br>";
 				}
 			}
 		}
 	}
 	else {
 		$validform = False;
-		echo "Address does not contain a street number.";
+		echo "Address does not contain a street number."."<br>";
 	}
 }
 $city = $_POST['city'];
 $citycharacters = str_split($city);
 if (count($citycharacters) == 1) {
-	echo "Please enter full city name.";
+	echo "Please enter full city name."."<br>";
 }
 //Is the state valid?
 $state = $_POST['state'];
-$stateinitials = str_split($state);
-if (count($stateinitials) != 2) {
-	$validform = False;
-	echo "State field is invalid."."<br>";
-}
 
 $zip = $_POST['zip'];
 $zipcharacters = str_split($zip);
@@ -192,7 +187,7 @@ if ($conn->query($ecomm) === TRUE) {
     echo "Error using database. " . $conn->error;
 }
 
-?> 
+?>
 <html>
 <form action="sign_up.html">
     <input type="submit" value="Back" />

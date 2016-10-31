@@ -52,36 +52,21 @@ if(SANDBOX_FLAG) {
                         <table>
                             <tr><td>Textbook </td><td><input class="form-control" type="text" name="camera_amount" value="300" readonly></input></td></tr>
                             <tr><td>Tax </td><td><input class="form-control" type="text" name="tax" value="5" readonly></input> </td></tr>
-                            <tr><td>Insurance </td><td><input class="form-control" type="text" name="insurance" value="10" readonly></input> </td></tr>
-                            <tr><td>Handling Fee </td><td><input class="form-control" type="text" name="handling_fee" value="5" readonly></input> </td></tr>
-                            <tr><td>Estimated Shipping </td><td><input class="form-control" type="text" name="estimated_shipping" value="2" readonly></input> </td></tr>
-                            <tr><td>Shipping Discount </td><td><input class="form-control" type="text" name="shipping_discount" value="-2" readonly></input> </td></tr>
-                            <tr><td>Total Amount </td><td><input class="form-control" type="text" name="total_amount" value="320" readonly></input> </td></tr>
+                            <tr><td>Total Amount </td><td><input class="form-control" type="text" name="total_amount" value="307" readonly></input> </td></tr>
                         </table>
 
                         <br/>
-                        <!--Container for Checkout with PayPal button-->
-                        <div id="myContainer"></div>
-                        <br/>
-                        <span style="margin-left:60px">OR</span>
-                        <br/><br/>
-                        <div>
-                            <button class="btn btn-primary" formaction="shipping.php" role="button">Proceed to Checkout</button>
-                        </div>
+
+                        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="HZL8V6JSWSZQE">
+                            <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+
                     </form>
                 </div>
             </div>
-
-            <!-- PayPal In-Context Checkout script -->
-            <script type="text/javascript">
-                window.paypalCheckoutReady = function () {
-                    paypal.checkout.setup('<?php echo(MERCHANT_ID); ?>', {
-                        container: 'myContainer', //{String|HTMLElement|Array} where you want the PayPal button to reside
-                        environment: '<?php echo($environment); ?>' //or 'production' depending on your environment
-                    });
-                };
-            </script>
-            <script src="//www.paypalobjects.com/api/checkout.js" async></script>
         </div>
     </body>
     </html>

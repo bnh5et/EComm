@@ -28,7 +28,7 @@ $_SESSION['markFlowPaymentData'] = json_encode($markFlowPaymentArray);
 ?>
 	<link rel="stylesheet" href="styles.css">
 	<div class="background">
-		<div class="main-panel">
+		<div class="main-panel" style="padding: 20px;">
 			<div class="row">
 				<div class="col-md-4"></div>
 				<div class="col-md-4">
