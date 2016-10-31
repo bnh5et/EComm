@@ -30,34 +30,33 @@
 		<div class="signup-page">
 			<form action="createNewAccount.php" method="post" onsubmit="return ccNumber()">
 				<h3>Personal Information</h3>
-                <p>Name:</p><input type="text" name="name" id="name" size="50"></input>
+                <p>Name:</p><input type="text" name="name" id="name" size="50">
 				<p>
-				<p>Email Address:</p><input type="text" name="email" id="email" size="50"></input>
+				<p>Email Address:</p><input type="text" name="email" id="email" size="50">
 				<p>
-				<p>Username:</p><input type="text" name="username" id="username" size="50"></input>
+				<p>Username:</p><input type="text" name="username" id="username" size="50">
 				<p>
-				<p>Password:</p><input type="password" name="password" id="password" size="50"></input>
+				<p>Password:</p><input type="password" name="password" id="password" size="50">
 				<p>
-				<p>Confirm Password:</p><input type="password" name="password2" id="password2" size="50"></input>
+				<p>Confirm Password:</p><input type="password" name="password2" id="password2" size="50">
 				<p>
-				<p>Address:</p><input type="text" name="address" id="address" size="50"></input>
+				<p>Address:</p><input type="text" name="address" id="address" size="50">
 				<p>
-				<p>City:</p><input type="text" name="city" id="city" size="50"></input>
+				<p>City:</p><input type="text" name="city" id="city" size="50">
 				<p>
-				<p>State: (as initials, ex. VA)</p><input type="text" name="state" id="state" size="50"></input>
+				<select name="state" size="50">State:
+
+				</select>
+				<p>
+				<p>Zip Code:</p><input type="text" name="zip" id="zip" size="50">
 				<p>
 				<h3>Banking Information</h3>
                 <p>Credit Card Number:</p><input type="creditcard" name="ccNumber" id="ccNumber" size="50" onChange="return ccNumber()">
 				<p>
-				<p>Credit Card Type:</p>
-				<input type="radio" name="vote" value="Visa">Visa</input>
-				<input type="radio" name="vote" value="Discover">Discover</input>
-				<input type="radio" name="vote" value="American Express">American Express</input>
-				<input type="radio" name="vote" value="MasterCard">MasterCard</input>
+				<p>Expiration Date:</p><input type="text" name="exp" id="exp" size="50">
 				<p>
-				<p>Expiration Date:</p><input type="text" name="exp" id="exp" size="50"></input>
+				<p>Security Code:</p><input type="text" name="security" id="name" size="50">
 				<p>
-				<p>Security Code:</p><input type="text" name="security" id="name" size="50"></input>
 				<input type="Submit" value="Submit" size="50" onClick="return isEmpty()" style="display: block">
 			</form>
 		</div>

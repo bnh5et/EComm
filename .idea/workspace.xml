@@ -28,33 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="createNewAccount.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="createNewAccount.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/createNewAccount.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="92" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="92" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="purchase.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/purchase.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
-              <caret line="83" column="45" selection-start-line="83" selection-start-column="45" selection-end-line="83" selection-end-column="45" />
-              <folding>
-                <marker date="1477923074000" expanded="false" signature="3274:3290" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shipping.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shipping.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5085">
-              <caret line="341" column="18" selection-start-line="341" selection-start-column="18" selection-end-line="341" selection-end-column="18" />
+            <state relative-caret-position="586">
+              <caret line="122" column="9" selection-start-line="122" selection-start-column="9" selection-end-line="122" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -66,6 +44,18 @@
             <state relative-caret-position="1331">
               <caret line="105" column="18" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sign_up.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sign_up.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#p#22;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,7 +93,6 @@
         <option value="$PROJECT_DIR$/app/app.component.html" />
         <option value="$PROJECT_DIR$/app.component.html" />
         <option value="$PROJECT_DIR$/styles.css" />
-        <option value="$PROJECT_DIR$/createNewAccount.php" />
         <option value="$PROJECT_DIR$/about_us.component.html" />
         <option value="$PROJECT_DIR$/home.component.html" />
         <option value="$PROJECT_DIR$/purchase.html" />
@@ -114,9 +103,10 @@
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/purchase.php" />
         <option value="$PROJECT_DIR$/startPayment.php" />
-        <option value="$PROJECT_DIR$/sign_up.html" />
         <option value="$PROJECT_DIR$/cancel.php" />
+        <option value="$PROJECT_DIR$/createNewAccount.php" />
         <option value="$PROJECT_DIR$/shipping.php" />
+        <option value="$PROJECT_DIR$/sign_up.html" />
       </list>
     </option>
   </component>
@@ -128,10 +118,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="51" />
+    <option name="x" value="469" />
     <option name="y" value="23" />
-    <option name="width" value="1389" />
-    <option name="height" value="857" />
+    <option name="width" value="971" />
+    <option name="height" value="840" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -275,7 +265,7 @@
       <workItem from="1476417380555" duration="106000" />
       <workItem from="1476724862471" duration="180000" />
       <workItem from="1476726053634" duration="518000" />
-      <workItem from="1477872748851" duration="4988000" />
+      <workItem from="1477872748851" duration="6040000" />
     </task>
     <task id="LOCAL-00001" summary="Template with about us and home page">
       <created>1474334335812</created>
@@ -298,19 +288,35 @@
       <option name="project" value="LOCAL" />
       <updated>1477923630696</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Improves shipping page">
+      <created>1477924609540</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1477924609540</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37497000" />
+    <option name="totallyTimeSpent" value="38549000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="23" width="1389" height="857" extended-state="0" />
+    <frame x="469" y="23" width="971" height="840" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.017766498" sideWeight="0.49710983" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19222462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.017948719" sideWeight="0.49710983" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27497426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1691678" sideWeight="0.50289017" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -346,7 +352,8 @@
     <MESSAGE value="Milestone 2" />
     <MESSAGE value="Included navigating and cleaned up purchase form" />
     <MESSAGE value="Random bug fixes, removes currency field, deletes header and footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Random bug fixes, removes currency field, deletes header and footer" />
+    <MESSAGE value="Improves shipping page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improves shipping page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -572,29 +579,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sign_up.html">
+    <entry file="file://$PROJECT_DIR$/createNewAccount.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#input#15;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="586">
+          <caret line="122" column="9" selection-start-line="122" selection-start-column="9" selection-end-line="122" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shipping.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5085">
-          <caret line="341" column="18" selection-start-line="341" selection-start-column="18" selection-end-line="341" selection-end-column="18" />
+        <state relative-caret-position="330">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createNewAccount.php">
+    <entry file="file://$PROJECT_DIR$/sign_up.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="92" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="92" />
-          <folding />
+        <state relative-caret-position="362">
+          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#p#22;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
