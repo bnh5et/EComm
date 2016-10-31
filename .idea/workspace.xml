@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c18c13dd-817f-4790-b768-3abbcbf54d5c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shipping.php" afterPath="$PROJECT_DIR$/shipping.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sign_up.html" afterPath="$PROJECT_DIR$/sign_up.html" />
     </list>
     <ignored path="my-proj.iws" />
@@ -51,11 +50,22 @@
       <file leaf-file-name="sign_up.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sign_up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+            <state relative-caret-position="255">
+              <caret line="48" column="104" selection-start-line="48" selection-start-column="104" selection-end-line="48" selection-end-column="104" />
               <folding>
-                <element signature="n#style#0;n#input#0;n#p#22;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#11;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paypalConfig.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paypalConfig.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,10 +128,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="469" />
+    <option name="x" value="540" />
     <option name="y" value="23" />
-    <option name="width" value="971" />
-    <option name="height" value="840" />
+    <option name="width" value="900" />
+    <option name="height" value="872" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -265,7 +275,7 @@
       <workItem from="1476417380555" duration="106000" />
       <workItem from="1476724862471" duration="180000" />
       <workItem from="1476726053634" duration="518000" />
-      <workItem from="1477872748851" duration="6040000" />
+      <workItem from="1477872748851" duration="7500000" />
     </task>
     <task id="LOCAL-00001" summary="Template with about us and home page">
       <created>1474334335812</created>
@@ -295,11 +305,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477924609540</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added zip code">
+      <created>1477925743333</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1477925743333</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38549000" />
+    <option name="totallyTimeSpent" value="40009000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -311,11 +328,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="469" y="23" width="971" height="840" extended-state="0" />
+    <frame x="540" y="23" width="900" height="872" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.017948719" sideWeight="0.49710983" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27497426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.01618929" sideWeight="0.49710983" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29666665" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1691678" sideWeight="0.50289017" order="7" side_tool="true" content_ui="tabs" />
@@ -353,7 +370,8 @@
     <MESSAGE value="Included navigating and cleaned up purchase form" />
     <MESSAGE value="Random bug fixes, removes currency field, deletes header and footer" />
     <MESSAGE value="Improves shipping page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improves shipping page" />
+    <MESSAGE value="Added zip code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added zip code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -362,13 +380,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/app.module.js" />
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/about_us.html">
@@ -595,12 +606,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/paypalConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sign_up.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        <state relative-caret-position="255">
+          <caret line="48" column="104" selection-start-line="48" selection-start-column="104" selection-end-line="48" selection-end-column="104" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#p#22;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#11;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
