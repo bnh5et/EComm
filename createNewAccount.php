@@ -64,16 +64,7 @@ if (($at == "") | ($period == "")) {
 else {
 	list($emailname, $mailDomain) = split("@", $email); 
 	if(myCheckDNSRR($mailDomain, "MX")) {
-		//This doesn't catch everything, but it can see if the email is a bogus one.
-		$to = $email;
-		$subject = 'the subject';
-		$message = 'hello';
-		$headers = 'From: webmaster@example.com' . "\r\n" .
-    	'Reply-To: webmaster@example.com' . "\r\n" .'X-Mailer: PHP/' . phpversion();
-    	ini_set('SMTP','myserver');
-    	ini_set('smtp_port',25);
-    	print("MAIL?");
-		mail($to, $subject, $message, $headers);
+		//Doesn't send anything, but it works.
 	}
 	else {
 		$validform = False;
