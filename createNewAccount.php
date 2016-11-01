@@ -185,13 +185,13 @@ else {
 $ecomm = "USE ecomm;";
 if ($conn->query($ecomm) === TRUE) {
     if ($validform == False) {
-		echo "Not a valid form. Sorry. Go back.";
+		echo "Not a valid form. Sorry. Go back.".'<br>';
 	}
 	else {
 		$creditcardnumber = (int) $ccNumber;
 		$sql = "INSERT INTO user (username, firstname, lastname, email, address, city, state, zip, ccNumber, exp, security) VALUES ('$username', '$firstname', '$lastname', '$email', '$address', '$city', '$state', '$zip', $ccNumber', '$exp', '$security');";
 		if ($conn->query($sql) === TRUE) {
-			echo "You have been registered! Welcome aboard, $firstname!";
+			echo "You have been registered! Welcome aboard, $firstname!".'<br>';
 		}
 		else {
 			echo "Could not insert the data." . $conn->error;
@@ -202,18 +202,23 @@ if ($conn->query($ecomm) === TRUE) {
 }
 
 $mail = new PHPMailer;
-$mail->Host = 'smtp.gmail.com;';  // Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'brianahart95@gmail.com';                 // SMTP username
-$mail->Password = 'I go to UVA!1';                           // SMTP password
-$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587;
 
-$mail->setFrom('bnh5et@virginia.edu', 'Briana Hart');
+//$mail->Host = 'smtp.gmail.com;';  // Specify main and backup SMTP servers
+//$mail->SMTPAuth = true;                               // Enable SMTP authentication
+//$mail->Username = 'brianahart95@gmail.com';                 // SMTP username
+//$mail->Password = 'I go to UVA!1';                           // SMTP password
+//$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+//$mail->Port = 587;
+
+$mail->From = "brianahart95@gmail.com";
+$mail->FromName = "Briana Hart";
+
 $mail->addAddress($_POST['email'], $_POST['name']);
 
-$mail->Subject = 'Congratulations on Signing Up!';
-$mail->Body    = 'Dear user, <br>Thank you for signing up.';
+$mail->isHTML(true);
+
+$mail->Subject = 'Thanks for Signing Up!';
+$mail->Body    = '<i>Dear user,<br>Thank you for signing up!</i>';
 
 if(!$mail->send()) {
 	echo 'Message could not be sent.';

@@ -4,7 +4,6 @@
     <list default="true" id="c18c13dd-817f-4790-b768-3abbcbf54d5c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/createNewAccount.php" afterPath="$PROJECT_DIR$/createNewAccount.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sql" afterPath="$PROJECT_DIR$/db.sql" />
     </list>
     <ignored path="my-proj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,12 +40,12 @@
       <file leaf-file-name="createNewAccount.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/createNewAccount.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="200" column="51" selection-start-line="200" selection-start-column="51" selection-end-line="200" selection-end-column="51" />
+            <state relative-caret-position="315">
+              <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
               <folding>
-                <marker date="1477958007000" expanded="true" signature="4689:4927" ph="INSERT INTO user... " />
-                <marker date="1477958007000" expanded="true" signature="5994:6080" ph="..." />
-                <marker date="1477958007000" expanded="true" signature="6023:6072" ph="..." />
+                <marker date="1477962144000" expanded="true" signature="4951:5189" ph="INSERT INTO user... " />
+                <marker date="1477962144000" expanded="true" signature="6316:6402" ph="..." />
+                <marker date="1477962144000" expanded="true" signature="6345:6394" ph="..." />
               </folding>
             </state>
           </provider>
@@ -121,10 +120,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="167" />
-    <option name="y" value="69" />
-    <option name="width" value="1231" />
-    <option name="height" value="753" />
+    <option name="x" value="214" />
+    <option name="y" value="23" />
+    <option name="width" value="1205" />
+    <option name="height" value="715" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -269,7 +268,7 @@
       <workItem from="1476724862471" duration="180000" />
       <workItem from="1476726053634" duration="518000" />
       <workItem from="1477872748851" duration="11488000" />
-      <workItem from="1477955782094" duration="1975000" />
+      <workItem from="1477955782094" duration="2851000" />
     </task>
     <task id="LOCAL-00001" summary="Template with about us and home page">
       <created>1474334335812</created>
@@ -320,11 +319,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477948196970</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implemented email into createNewAccount - not working yet">
+      <created>1477958815999</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1477958815999</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45972000" />
+    <option name="totallyTimeSpent" value="46848000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -336,11 +342,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="167" y="69" width="1231" height="753" extended-state="0" />
+    <frame x="214" y="23" width="1205" height="715" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.01754386" sideWeight="0.49710983" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21689683" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.01857585" sideWeight="0.49710983" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22157677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1691678" sideWeight="0.50289017" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -381,7 +387,8 @@
     <MESSAGE value="Added zip code" />
     <MESSAGE value="Made state a dropdown" />
     <MESSAGE value="With merchant id" />
-    <option name="LAST_COMMIT_MESSAGE" value="With merchant id" />
+    <MESSAGE value="Implemented email into createNewAccount - not working yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented email into createNewAccount - not working yet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -596,12 +603,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/createNewAccount.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="200" column="51" selection-start-line="200" selection-start-column="51" selection-end-line="200" selection-end-column="51" />
+        <state relative-caret-position="315">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
           <folding>
-            <marker date="1477958007000" expanded="true" signature="4689:4927" ph="INSERT INTO user... " />
-            <marker date="1477958007000" expanded="true" signature="5994:6080" ph="..." />
-            <marker date="1477958007000" expanded="true" signature="6023:6072" ph="..." />
+            <marker date="1477962144000" expanded="true" signature="4951:5189" ph="INSERT INTO user... " />
+            <marker date="1477962144000" expanded="true" signature="6316:6402" ph="..." />
+            <marker date="1477962144000" expanded="true" signature="6345:6394" ph="..." />
           </folding>
         </state>
       </provider>
