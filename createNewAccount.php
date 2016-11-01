@@ -1,4 +1,7 @@
 <?php
+include('email.php');
+
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -58,7 +61,16 @@ if (($at == "") | ($period == "")) {
 	$validform = False;
 	echo "Email address not formatted correctly."."<br>";
 }
-
+else {
+	list($emailname, $mailDomain) = split("@", $email); 
+	if(myCheckDNSRR($mailDomain, "MX")) {
+		//This doesn't catch everything, but it can see if the email is a bogus one.
+	}
+	else {
+		$validform = False;
+		echo "The email domain is a bogus domain."."<br>";
+	}
+}
 //Is the username valid?
 $username = $_POST['username'];
 
