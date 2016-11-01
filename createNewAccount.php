@@ -96,12 +96,12 @@ else {
 				echo "Cannot have special characters in street address."."<br>";
 			}
 			$streetaddresscharacters = str_split($addresscomponents[$i]);
-			for ($j = 0; $j < count($streetaddresscharacters) - 1; $j++) {
-				if (is_numeric($streetaddresscharacters[$j])) {
-					$validform = False;
-					echo "Cannot have numbers in street address."."<br>";
-				}
-			}
+			//for ($j = 0; $j < count($streetaddresscharacters) - 1; $j++) {
+			//	if (is_numeric($streetaddresscharacters[$j])) {
+			//		$validform = False;
+			//		echo "Cannot have numbers in street address."."<br>";
+			//	}
+			//}
 		}
 	}
 	else {
