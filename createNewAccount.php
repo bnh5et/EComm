@@ -3,6 +3,8 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 
+require 'PHPMailer/PHPMailerAutoload.php';
+
 // Create connection
 $conn = new mysqli($servername, $username, $password);
 
@@ -185,6 +187,27 @@ if ($conn->query($ecomm) === TRUE) {
 	}
 } else {
     echo "Error using database. " . $conn->error;
+}
+
+$mail = new PHPMailer;
+$mail->Host = 'smtp.gmail.com;';  // Specify main and backup SMTP servers
+$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->Username = 'brianahart95@gmail.com';                 // SMTP username
+$mail->Password = 'I go to UVA!1';                           // SMTP password
+$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587;
+
+$mail->setFrom('bnh5et@virginia.edu', 'Briana Hart');
+$mail->addAddress($_POST['email'], $_POST['name']);
+
+$mail->Subject = 'Congratulations on Signing Up!';
+$mail->Body    = 'Dear user, <br>Thank you for signing up.';
+
+if(!$mail->send()) {
+	echo 'Message could not be sent.';
+	echo 'Mailer Error: ' . $mail->ErrorInfo;
+} else {
+	echo 'Message has been sent';
 }
 
 ?>
