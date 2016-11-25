@@ -5,8 +5,6 @@
 if (session_id() == "")
     session_start();
 
-require 'PHPMailer/PHPMailerAutoload.php';
-
 include('utilFunctions.php');
 include('paypalFunctions.php');
 
@@ -22,55 +20,13 @@ $state= filter_var($lookUpPaymentInfo['payer']['payer_info']['shipping_address']
 $postalCode = filter_var($lookUpPaymentInfo['payer']['payer_info']['shipping_address']['postal_code'],FILTER_SANITIZE_SPECIAL_CHARS);
 $countryCode= filter_var($lookUpPaymentInfo['payer']['payer_info']['shipping_address']['country_code'],FILTER_SANITIZE_SPECIAL_CHARS);
 
-$mail = new PHPMailer;
-$mail->Host = 'smtp.gmail.com;';  // Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'bnh5et@virginia.com';                 // SMTP username
-$mail->Password = 'secret';                           // SMTP password
-$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587;
-
-$mail->setFrom('bnh5et@virginia.edu', 'Briana Hart');
-$mail->addAddress('joe@example.net', 'Joe User');
-
-$mail->Subject = 'Congratulations on Your Recent Order!';
-$mail->Body    = 'Dear user, <br>Thank you for your recent order.';
-
-if(!$mail->send()) {
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
-} else {
-    echo 'Message has been sent';
-}
-
 ?>
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <h3>Ship To :</h3>
-            <?php echo($recipientName);?><br/>
-            <?php echo($addressLine1);?><br/>
-            <?php echo($addressLine2);?><br/>
-            <?php echo($city);?><br/>
-            <?php echo($state.'-'.$postalCode);?><br/>
-            <?php echo($countryCode);?>
 
             <form action="pay.php" method="POST">
                 <input type="text" name="csrf" value="<?php echo($_SESSION['csrf']);?>" hidden readonly/>
-                <label>Shipping methods:</label>
-                <select class="form-control" name="shipping_method" id="shipping_method" style="width: 250px;" class="required-entry">
-                    <optgroup label="United Parcel Service" style="font-style:normal;">
-                        <option value="8.00">
-                            Worldwide Expedited - 8.00</option>
-                        <option value="4.00">
-                            Worldwide Express Saver - 4.00</option>
-                    </optgroup>
-                    <optgroup label="Flat Rate" style="font-style:normal;">
-                        <option value="2.00" selected>
-                            Fixed - 2.00</option>
-                    </optgroup>
-                </select>
-                <br/>
                 <button type="submit" class="btn btn-primary">Confirm Order</button>
             </form>
             <br/>

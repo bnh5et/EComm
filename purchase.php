@@ -31,7 +31,7 @@ if(SANDBOX_FLAG) {
             <div class="block-design"></div>
             <img class="logo" src="./img/logo.png">
             <nav>
-                <a href="home.html">HOME</a>
+                <a href="index.php">HOME</a>
                 <a href="purchase.html">SHOP</a>
                 <a href="about_us.html">ABOUT US</a>
                 <a href="sign_up.html">SIGN UP</a>
@@ -52,7 +52,7 @@ if(SANDBOX_FLAG) {
                         <table>
                             <tr><td>Textbook </td><td><input class="form-control" type="text" name="camera_amount" value="300" readonly></input></td></tr>
                             <tr><td>Tax </td><td><input class="form-control" type="text" name="tax" value="5" readonly></input> </td></tr>
-                            <tr><td>Total Amount </td><td><input class="form-control" type="text" name="total_amount" value="307" readonly></input> </td></tr>
+                            <tr><td>Total Amount </td><td><input class="form-control" type="text" name="total_amount" value="305" readonly></input> </td></tr>
                         </table>
 
                         <br/>

@@ -18,7 +18,7 @@
         <div class="block-design"></div>
         <img class="logo" src="./img/logo.png">
         <nav>
-            <a href="home.html">HOME</a>
+            <a href="index.php">HOME</a>
             <a href="purchase.php">SHOP</a>
             <a href="about_us.html">ABOUT US</a>
             <a href="sign_up.html">SIGN UP</a>

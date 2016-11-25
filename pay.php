@@ -18,8 +18,6 @@
 
         if(verify_nonce()){
             $expressCheckoutFlowArray = json_decode($_SESSION['expressCheckoutPaymentData'], true);
-                    $expressCheckoutFlowArray['transactions'][0]['amount']['total'] = (float)$expressCheckoutFlowArray['transactions'][0]['amount']['total'] + (float)$_POST['shipping_method'] - (float)$expressCheckoutFlowArray['transactions'][0]['amount']['details']['shipping'];
-                    $expressCheckoutFlowArray['transactions'][0]['amount']['details']['shipping'] = $_POST['shipping_method'];
                     $transactionAmountUpdateArray = $expressCheckoutFlowArray['transactions'][0];
                     $_SESSION['expressCheckoutPaymentData'] = json_encode($expressCheckoutFlowArray);
 
@@ -63,14 +61,6 @@
         <div class="col-md-4">
             <h4>
                 <?php echo($payerFirstName.' '.$payerLastName.', Thank you for your Order!');?><br/><br/>
-                Shipping Address: </h4>
-                <?php echo($recipientName);?><br/>
-                <?php echo($addressLine1);?><br/>
-                <?php echo($addressLine2);?><br/>
-                <?php echo($city);?><br/>
-                <?php echo($state.'-'.$postalCode);?><br/>
-                <?php echo($countryCode);?>
-
                 <h4>Payment ID: <?php echo($paymentID);?> <br/>
 		Transaction ID : <?php echo($transactionID);?> <br/>
                 State : <?php echo($paymentState);?> <br/>

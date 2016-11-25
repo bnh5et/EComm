@@ -24,7 +24,7 @@
 			<br />
 			<br />
 
-            Return to <a href="home.html">home page</a>.
+            Return to <a href="index.php">home page</a>.
         </div>
         <div class="col-md-4"></div>
     </div>

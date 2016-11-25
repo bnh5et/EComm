@@ -201,30 +201,36 @@ if ($conn->query($ecomm) === TRUE) {
     echo "Error using database. " . $conn->error;
 }
 
-$mail = new PHPMailer;
+require_once 'PHPMailer/PHPMailerAutoload.php';
 
-//$mail->Host = 'smtp.gmail.com;';  // Specify main and backup SMTP servers
-//$mail->SMTPAuth = true;                               // Enable SMTP authentication
-//$mail->Username = 'brianahart95@gmail.com';                 // SMTP username
-//$mail->Password = 'I go to UVA!1';                           // SMTP password
-//$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-//$mail->Port = 587;
+if($validform) {
 
-$mail->From = "brianahart95@gmail.com";
-$mail->FromName = "Briana Hart";
 
-$mail->addAddress($_POST['email'], $_POST['name']);
+	$mail = new PHPMailer;
+	$mail->isSendmail();
 
-$mail->isHTML(true);
+	//$mail->IsSMTP();
+	//$mail->SMTPDebug  = 1;
+	//$mail->SMTPAuth   = true;
+	///$mail->SMTPSecure = "tls";
+	//$mail->Host       = "mail.gmail.com";
+	//$mail->Port       = 587;
+	//$mail->Username   = "brianahart95@gmail.com";
+	//$mail->Password   = "I go to UVA!1";
 
-$mail->Subject = 'Thanks for Signing Up!';
-$mail->Body    = '<i>Dear user,<br>Thank you for signing up!</i>';
+	$mail->From = "brianahart95@gmail.com";
+	$mail->FromName = "Briana Hart";
+	$mail->addAddress($_POST['email'], $_POST['name']);
+	$mail->isHTML(true);
+	$mail->Subject = 'Thanks for Signing Up!';
+	$mail->Body    = '<i>Dear user,<br>Thank you for signing up!</i>';
 
-if(!$mail->send()) {
-	echo 'Message could not be sent.';
-	echo 'Mailer Error: ' . $mail->ErrorInfo;
-} else {
-	echo 'Message has been sent';
+	if(!$mail->send()) {
+		echo 'Message could not be sent.';
+		echo 'Mailer Error: ' . $mail->ErrorInfo;
+	} else {
+		echo 'Message has been sent';
+	}
 }
 
 ?>
