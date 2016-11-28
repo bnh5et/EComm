@@ -152,10 +152,18 @@ $monthday = explode("/", $exp);
 if (count($monthday) == 2) {
 	if (is_numeric($monthday[0]) & is_numeric($monthday[1])) {
 		$month = (int) $monthday[0];
-		$day = (int) $monthday[1];
-		if (($month < 1) | ($month > 12) | ($day > 100)) {
+		$year = (int) $monthday[1];
+		if (($month < 1) | ($month > 12)) {
 			$validform = False;
-			echo "Not a valid month or year."."<br>";
+			echo "Please enter a valid month."."<br>";
+		}
+		else if (($year < 16)) {
+			$validform = False;
+			echo "Credit card has expired."."<br>";
+		}
+		else if (($year == 16) & ($month < 11)) {
+			$validform = False;
+			echo "Credit card has expired."."<br>";
 		}
 	}
 	else {
