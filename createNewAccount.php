@@ -1,21 +1,20 @@
 <?php
 include('email.php');
 
-
 $servername = "localhost";
-$username = "root";
+$user_name = "root";
 $password = "";
 
 require 'PHPMailer/PHPMailerAutoload.php';
 
 // Create connection
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $user_name, $password);
 
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+	die("Connection failed: " . $conn->connect_error);
 }
-//$sql = "INSERT INTO Users (username, firstname, lastname, email, address, city, state, zip);";
+
 
 $validform = True;
 
@@ -62,7 +61,7 @@ if (($at == "") | ($period == "")) {
 	echo "Email address not formatted correctly."."<br>";
 }
 else {
-	list($emailname, $mailDomain) = split("@", $email); 
+	list($emailname, $mailDomain) = split("@", $email);
 	if(myCheckDNSRR($mailDomain, "MX")) {
 		//Doesn't send anything, but it works.
 	}
@@ -71,8 +70,21 @@ else {
 		echo "The email domain is a bogus domain."."<br>";
 	}
 }
+
+
 //Is the username valid?
 $username = $_POST['username'];
+/*
+$query_username = "SELECT `username` FROM `user` WHERE `username` = '$username'";
+$checkUserName = mysqli_query($conn, $query_username);
+
+if (mysqli_num_rows($checkUserName) > 0) {
+	$validform = False;
+	echo "Username already exists.";
+}
+
+$checkUserName->close();
+*/
 
 //Is the password valid?
 $password = $_POST['password'];
@@ -192,7 +204,7 @@ else {
 
 $ecomm = "USE ecomm;";
 if ($conn->query($ecomm) === TRUE) {
-    if ($validform == False) {
+	if ($validform == False) {
 		echo "Not a valid form. Sorry. Go back.".'<br>';
 	}
 	else {
@@ -200,50 +212,49 @@ if ($conn->query($ecomm) === TRUE) {
 		$sql = "INSERT INTO user (username, firstname, lastname, email, address, city, state, zip, ccNumber, exp, security) VALUES ('$username', '$firstname', '$lastname', '$email', '$address', '$city', '$state', '$zip', '$ccNumber', '$exp', '$security');";
 		if ($conn->query($sql) === TRUE) {
 			echo "You have been registered! Welcome aboard, $firstname!".'<br>';
+
+			$mail = new PHPMailer;
+			$mail->isSendmail();
+
+			//$mail->IsSMTP();
+			//$mail->SMTPDebug  = 1;
+			//$mail->SMTPAuth   = true;
+			///$mail->SMTPSecure = "tls";
+			//$mail->Host       = "mail.gmail.com";
+			//$mail->Port       = 587;
+			//$mail->Username   = "brianahart95@gmail.com";
+			//$mail->Password   = "I go to UVA!1";
+
+			$mail->From = "brianahart95@gmail.com";
+			$mail->FromName = "Briana Hart";
+			$mail->addAddress($_POST['email'], $_POST['name']);
+			$mail->isHTML(true);
+			$mail->Subject = 'Thanks for Signing Up!';
+			$mail->Body    = '<i>Dear user,<br>Thank you for signing up!</i>';
+
+			if(!$mail->send()) {
+				echo 'Message could not be sent.';
+				echo 'Mailer Error: ' . $mail->ErrorInfo;
+			} else {
+				echo 'Message has been sent';
+			}
+
 		}
 		else {
 			echo "Could not insert the data." . $conn->error;
 		}
+
+
 	}
 } else {
-    echo "Error using database. " . $conn->error;
+	echo "Error using database. " . $conn->error;
 }
 
 require_once 'PHPMailer/PHPMailerAutoload.php';
 
-if($validform) {
-
-
-	$mail = new PHPMailer;
-	$mail->isSendmail();
-
-	//$mail->IsSMTP();
-	//$mail->SMTPDebug  = 1;
-	//$mail->SMTPAuth   = true;
-	///$mail->SMTPSecure = "tls";
-	//$mail->Host       = "mail.gmail.com";
-	//$mail->Port       = 587;
-	//$mail->Username   = "brianahart95@gmail.com";
-	//$mail->Password   = "I go to UVA!1";
-
-	$mail->From = "brianahart95@gmail.com";
-	$mail->FromName = "Briana Hart";
-	$mail->addAddress($_POST['email'], $_POST['name']);
-	$mail->isHTML(true);
-	$mail->Subject = 'Thanks for Signing Up!';
-	$mail->Body    = '<i>Dear user,<br>Thank you for signing up!</i>';
-
-	if(!$mail->send()) {
-		echo 'Message could not be sent.';
-		echo 'Mailer Error: ' . $mail->ErrorInfo;
-	} else {
-		echo 'Message has been sent';
-	}
-}
-
 ?>
 <html>
 <form action="sign_up.html">
-    <input type="submit" value="Back" />
+	<input type="submit" value="Back" />
 </form>
 </html>

@@ -26,7 +26,7 @@
 			<a href="sign_up.html">MEMBER HOME PAGE</a>
 		</nav>
 
-		<div class="signup-page">
+		<div class="signup-page" style="padding: 20px;">
 			<div class="signup" style="width: 50%; display: inline-block; border-right: 2px solid slategray;">
 				<h3 style="text-align: center;">SIGN UP</h3>
 				<form action="createNewAccount.php" method="post">
@@ -114,10 +114,10 @@
 			</div>
 			<div class="signin" style="width: 50%; display: inline-block; float: right; padding-left: 20px;">
 				<h3 style="text-align: center;">SIGN IN</h3>
-				<form>
-					<p>Username:</p><input type="text" size="50">
+				<form action="signIn.php">
+					<p>Username:</p><input type="text" name="checkUsername" id="checkUsername" size="50">
 					<p></p>
-					<p>Password:</p><input type="password" size="50">
+					<p>Password:</p><input type="password" name="checkPassword" id="checkPassword" size="50">
 					<p></p>
 					<input type="Submit" value="Submit">
 				</form>
