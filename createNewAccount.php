@@ -5,7 +5,7 @@ $servername = "localhost";
 $user_name = "root";
 $password = "";
 
-require 'PHPMailer/PHPMailerAutoload.php';
+require 'PHPMailerAutoload.php';
 
 // Create connection
 $conn = new mysqli($servername, $user_name, $password);
@@ -209,7 +209,7 @@ if ($conn->query($ecomm) === TRUE) {
 	}
 	else {
 		$creditcardnumber = (int) $ccNumber;
-		$sql = "INSERT INTO user (username, firstname, lastname, email, address, city, state, zip, ccNumber, exp, security) VALUES ('$username', '$firstname', '$lastname', '$email', '$address', '$city', '$state', '$zip', '$ccNumber', '$exp', '$security');";
+		$sql = "INSERT INTO user (username, firstname, lastname, password, email, address, city, state, zip, ccNumber, exp, security) VALUES ('$username', '$firstname', '$lastname', '$password', '$email', '$address', '$city', '$state', '$zip', '$ccNumber', '$exp', '$security');";
 		if ($conn->query($sql) === TRUE) {
 			echo "You have been registered! Welcome aboard, $firstname!".'<br>';
 
