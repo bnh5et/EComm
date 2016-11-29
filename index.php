@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<?php 
+    session_start();
+    ?>
 <div class="background">
     <div class="main-panel">
         <div class="block-design"></div>
@@ -20,8 +23,12 @@
         <nav>
             <a href="index.php">HOME</a>
             <a href="purchase.php">SHOP</a>
-            <a href="about_us.html">ABOUT US</a>
-            <a href="sign_in.html">SIGN IN</a>
+            <a href="about_us.php">ABOUT US</a>
+            <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === false ): ?>
+                <a href="sign_in.php">SIGN IN</a>
+            <?php else: ?>
+                <a href="sign_out.php">SIGN OUT</a>
+            <?php endif; ?>
         </nav>
         <div class="home-page">
             <div id="textbook-overlay">
