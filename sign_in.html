@@ -23,15 +23,15 @@
             <a href="index.php">HOME</a>
             <a href="purchase.php">SHOP</a>
             <a href="about_us.html">ABOUT US</a>
-            <a href="sign_up.html">SIGN IN</a>
+            <a href="sign_in.html">SIGN IN</a>
         </nav>
         <div class="signup-page" style="padding: 20px;">
             <div class="signup" style="width: 50%; display: inline-block; border-right: 2px solid slategray;">
                 <h3 style="text-align: center;">SIGN IN</h3>
-                <form action="signIn.php">
-                    <p>Username:</p><input type="text" name="checkUsername" id="checkUsername" size="50">
+                <form action="signIn.php" method="post">
+                    <p>Username:</p><input type="text" name="checkUsername" size="50">
                     <p></p>
-                    <p>Password:</p><input type="password" name="checkPassword" id="checkPassword" size="50">
+                    <p>Password:</p><input type="password" name="checkPassword" size="50">
                     <p></p>
                     <input type="Submit" value="Submit">
                 </form>

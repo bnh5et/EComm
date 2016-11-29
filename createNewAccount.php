@@ -74,8 +74,8 @@ else {
 
 //Is the username valid?
 $username = $_POST['username'];
-/*
-$query_username = "SELECT `username` FROM `user` WHERE `username` = '$username'";
+
+$query_username = "SELECT * FROM user WHERE username = '$username'";
 $checkUserName = mysqli_query($conn, $query_username);
 
 if (mysqli_num_rows($checkUserName) > 0) {
@@ -84,7 +84,7 @@ if (mysqli_num_rows($checkUserName) > 0) {
 }
 
 $checkUserName->close();
-*/
+
 
 //Is the password valid?
 $password = $_POST['password'];
