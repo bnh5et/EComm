@@ -14,19 +14,32 @@ if (mysqli_connect_errno()) {
 $checkusername = $_POST['checkUsername'];
 $checkpassword = $_POST['checkPassword'];
 	//Form the SQL query
-if (!mysqli_query($conn, "SELECT * FROM user WHERE username='$checkusername' AND password = '$checkpassword'"))
+$query = "SELECT * FROM user WHERE username='$checkusername' AND password = '$checkpassword'";
+$result = $conn->query($query);
+//echo $result->num_rows;
+
+if ($result->num_rows > 0)
 {
-    echo "Username or password not found";
-}
-else{
 	$row = $result->fetch_assoc();
+	//echo "Hello! \n";
+	//echo "Username". $row['username'];
+	//echo "Password". $row['password'];
 	echo "Welcome, $checkusername! You have successfully connected to MySQL! Sadly, nothing else
 	has actually been implemented yet!";
 	$_SESSION['username'] = $checkusername;
 	//$_SESSION['type'] = $row['user_type'];
 	$_SESSION['password'] = $checkpassword;
 	$_SESSION['loggedin'] = true;
-	header('Location: '."home.php");
+    //header('Location: '."home.php");
+	//session_write_close();
+	//session_regenerate_id(true);
+}
+else{
+	echo "Username or password not found";
+    $conn->close();
+	
+	
+	
 }
 
 ?>
