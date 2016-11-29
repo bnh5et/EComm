@@ -32,9 +32,9 @@ if(SANDBOX_FLAG) {
             <img class="logo" src="./img/logo.png">
             <nav>
                 <a href="index.php">HOME</a>
-                <a href="purchase.html">SHOP</a>
+                <a href="purchase.php">SHOP</a>
                 <a href="about_us.html">ABOUT US</a>
-                <a href="sign_up.html">SIGN UP</a>
+                <a href="sign_in.html">SIGN IN</a>
             </nav>
 
 
