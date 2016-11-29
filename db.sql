@@ -1,4 +1,4 @@
--- MySQL dump 10.16  Distrib 10.1.16-MariaDB, for osx10.6 (i386)
+-- MySQL dump 10.16  Distrib 10.1.16-MariaDB, for Win32 (AMD64)
 --
 -- Host: localhost    Database: ecomm
 -- ------------------------------------------------------
@@ -46,7 +46,7 @@ DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `user` (
-  `username` varchar(255) DEFAULT NULL,
+  `username` varchar(255) NOT NULL,
   `firstname` varchar(255) DEFAULT NULL,
   `lastname` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
@@ -56,7 +56,9 @@ CREATE TABLE `user` (
   `zip` int(10) DEFAULT NULL,
   `ccNumber` varchar(20) DEFAULT NULL,
   `exp` varchar(20) DEFAULT NULL,
-  `security` int(3) DEFAULT NULL
+  `security` int(3) DEFAULT NULL,
+  PRIMARY KEY (`username`),
+  UNIQUE KEY `username` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -66,7 +68,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES ('Woahnelly','Amber','Lee','ajl4cf@virginia.edu','','','MD',NULL,NULL,NULL,NULL),('turdymcturdface','Turdy','McTurdFace','turd@yahoo.com','','','VT',NULL,NULL,NULL,NULL),('alphamale','Joshua','Kelly','joshuakelly@gmail.com','Po Po','Girugamesh','VA',NULL,NULL,NULL,NULL),('alphamale','Joshua','Kelly','joshuakelly@gmail.com','Po Po','Girugamesh','VA',NULL,NULL,NULL,NULL),('alphamale','WA','WA','joshuakelly@gmail.com','Po Po','Girugamesh','VA',NULL,NULL,NULL,NULL),('potatomanalfredo','Potato','Man','alfredosauce@aol.com','111 Elm Street','Technica','VA',NULL,'2147483647','0000-00-00',123),('sampleusername','Something','','hello@yahoo.com','123 Abc','Kentucky','PA',NULL,'2147483647','0000-00-00',0),('sampleusername','Something','','hello@yahoo.com','123 Abc','Kentucky','PA',NULL,'2147483647','0000-00-00',0),('sampleusername','Something','','hello@yahoo.com','123 Abc','Kentucky','PA',NULL,'2147483647','0000-00-00',0),('username','firstname','lastname',NULL,NULL,NULL,NULL,NULL,'2147483647',NULL,NULL),('asianfever','Helen','Kim','helenkim@yahoo.com','111 yoyoyo','Salt Lake City','MA',NULL,'2147483647','0000-00-00',567),('username','firstname','lastname',NULL,NULL,NULL,NULL,NULL,'2147483647',NULL,NULL),('potatomanalfredo','Potato','Man','alfredosauce@aol.com','111 Elm Street','Technica','VA',NULL,'2147483647','0000-00-00',123),('asianfever','Helen','Kim','helenkim@yahoo.com','111 yoyoyo','Salt Lake City','MA',NULL,'2147483647','0000-00-00',567),('potatomanalfredo','Potato','Man','alfredosauce@aol.com','111 Elm Street','Technica','VA',NULL,'2147483647','0000-00-00',123),('asianfever','Helen','Kim','helenkim@yahoo.com','111 yoyoyo','Salt Lake City','MA',NULL,'2147483647','0000-00-00',567),('potatomanalfredo','Potato','Man','alfredosauce@aol.com','111 Elm Street','Technica','VA',NULL,'1234567812345678','0000-00-00',123),('kitteh','Hello','Kitty','kitten@aol.com','123 Hello','Salt Lake City','OH',NULL,'1111111111111111','3/15',999);
+INSERT INTO `user` VALUES ('amberlee','Amber','Lee','ajl4cf@gmail.com','123 Yoda Road','Hellokitty','AL',12345,'1234123412341234','5/19',123);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -79,4 +81,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-31 19:29:23
+-- Dump completed on 2016-11-28 21:30:35
