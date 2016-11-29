@@ -30,7 +30,8 @@ if ($result->num_rows > 0)
 	//$_SESSION['type'] = $row['user_type'];
 	$_SESSION['password'] = $checkpassword;
 	$_SESSION['loggedin'] = true;
-    //header('Location: '."home.php");
+	echo $_SESSION['password'];
+    header('Location: '."home.php");
 	//session_write_close();
 	//session_regenerate_id(true);
 }
