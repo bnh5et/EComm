@@ -49,7 +49,9 @@
             You currently have '.$credits.' credits.
         </h2>
         <div style="align-content:center; ">
-                <a href="purchase.php">PURCHASE MORE CREDIT</a>
+            <button style="height:100px;width:200px">
+                <a href="credit.php">PURCHASE MORE CREDIT</a>
+            </button>
         </div>
         <br>
         ';
