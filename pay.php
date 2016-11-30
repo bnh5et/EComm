@@ -2,9 +2,21 @@
     /*
         * Payment Confirmation page : has call to execute the payment and displays the Confirmation details
     */
+    $servername = "localhost";
+    $user_name = "root";
+    $password = "";
+    $conn = new mysqli($servername, $user_name, $password);
+
+// Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
     if (session_id() == "")
         session_start();
-
+    if (!isset($_SESSION['loggedin'])) {
+        header('Location: '."sign_in.php");
+    }
     include('utilFunctions.php');
     include('paypalFunctions.php');
 
@@ -72,6 +84,16 @@
         <div class="col-md-4"></div>
     </div>
 <?php
+    $currentnumberofcredits = (int)$_SESSION['credit'] + (int)$finalAmount / 10;
+    $sql = "UPDATE user
+            SET credits = '$currentnumberofcredits',
+            WHERE username = '$_SESSION['username']';";
+    if ($conn->query($sql) === TRUE) {
+        echo $currentnumberofcredits." credits have been added to your account.";
+    }
+    else {
+        echo "Something went wrong.";
+    }
     if (session_id() !== "") {
                session_unset();
                session_destroy();
