@@ -3,6 +3,6 @@
 	session_unset();
 	session_destroy();
 
-	header('Location: '."sign_up.php");
+	header('Location: '."index.php");
 	exit();
 ?>

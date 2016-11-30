@@ -42,18 +42,24 @@
         $name = $_SESSION['username'];
         $credits = $_SESSION['credit'];
 
-    	print '<h1 style="align-content: center;">
+    	print '<center>
+        <h1>
             Welcome aboard, '.$name.'!
         </h1>
         <h2>
             You currently have '.$credits.' credits.
         </h2>
-        <div style="align-content:center; ">
-            <button style="height:100px;width:200px">
+        <p>(1 credit is equivalent to $10)</p>
+        </center>
+        <br>
+        <br>
+        <div>
+            <div class="button-box" style="width: 300px; margin-left: calc(50% - 150px);">
                 <a href="credit.php">PURCHASE MORE CREDIT</a>
-            </button>
+            </div>
         </div>
         <br>
+        
         ';
     ?>
 

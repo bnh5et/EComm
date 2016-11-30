@@ -74,17 +74,25 @@ else {
 
 //Is the username valid?
 $username = $_POST['username'];
+$con = mysqli_connect($servername, $user_name, $password, "ecomm");
 
 $query_username = "SELECT * FROM user WHERE username = '$username'";
-$checkUserName = mysqli_query($conn, $query_username);
-/*
-if (mysqli_num_rows($checkUserName) > 0) {
+$query_email = "SELECT * FROM user WHERE email = '$email'";
+
+$checkUserName = $con->query($query_username);
+$checkEmail = $con->query($query_email);
+
+if ($checkUserName->num_rows > 0) {
 	$validform = False;
-	echo "Username already exists.";
+	echo "Username already exists. Please choose a different one."."<br>";
 }
 
-$checkUserName->close();
-*/
+if ($checkEmail->num_rows > 0) {
+	$validform = False;
+	echo "There is already an account associated with that email."."<br>";
+}
+
+$con->close();
 
 //Is the password valid?
 $password = $_POST['password'];
@@ -215,15 +223,6 @@ if ($conn->query($ecomm) === TRUE) {
 
 			$mail = new PHPMailer;
 			$mail->isSendmail();
-
-			//$mail->IsSMTP();
-			//$mail->SMTPDebug  = 1;
-			//$mail->SMTPAuth   = true;
-			///$mail->SMTPSecure = "tls";
-			//$mail->Host       = "mail.gmail.com";
-			//$mail->Port       = 587;
-			//$mail->Username   = "brianahart95@gmail.com";
-			//$mail->Password   = "I go to UVA!1";
 
 			$mail->From = "brianahart95@gmail.com";
 			$mail->FromName = "Briana Hart";

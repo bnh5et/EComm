@@ -57,6 +57,11 @@
         </button>
         </center>
         <br>
+        <div class="button-box" style="width: 240px; margin-left: calc(50% - 120px);">
+            <a href="home.php">VIEW YOUR CREDITS</a>
+        </div>
+        <br>
+        <br>
         ';
     ?>
     </div>

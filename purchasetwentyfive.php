@@ -56,17 +56,14 @@ if(SANDBOX_FLAG) {
 
 
             <div class="aboutus-page">
-                
-                <h3>25 Credits </h3>
-                <h4>Are you sure?</h4>
+
+                <h3>25 Credits </h3>
                 <div>
                     <h4> Pricing Details </h4>
                     <form action="startPayment.php" method="POST">
                         <input type="text" name="csrf" value="<?php echo($_SESSION['csrf']);?>" hidden readonly/>
                         <table>
-                            <tr><td>Credit </td><td><input class="form-control" type="text" name="camera_amount" value="500" readonly></input></td></tr>
-                            <tr><td>Tax </td><td><input class="form-control" type="text" name="tax" value="25" readonly></input> </td></tr>
-                            <tr><td>Total Amount </td><td><input class="form-control" type="text" name="total_amount" value="525" readonly></input> </td></tr>
+                            <tr><td>Total Amount </td><td><input class="form-control" type="text" name="camera_amount" value="250" readonly></input></td></tr>
                         </table>
 
                         <br/>
@@ -80,6 +77,11 @@ if(SANDBOX_FLAG) {
 
                     </form>
                 </div>
+
+                <div class="button-box">
+                    <a href="credit.php">GO BACK</a>
+                </div>
+
             </div>
         </div>
     </body>
