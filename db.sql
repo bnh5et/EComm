@@ -1,4 +1,4 @@
--- MySQL dump 10.16  Distrib 10.1.16-MariaDB, for Win32 (AMD64)
+-- MySQL dump 10.16  Distrib 10.1.16-MariaDB, for osx10.6 (i386)
 --
 -- Host: localhost    Database: ecomm
 -- ------------------------------------------------------
@@ -82,4 +82,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-11-29 17:47:10
+-- Dump completed on 2016-11-29 20:22:24
