@@ -241,7 +241,7 @@ if ($conn->query($ecomm) === TRUE) {
 
 		}
 		else {
-			echo "Could not insert the data." . $conn->error;
+			echo "Could not insert the data. " . $conn->error;
 		}
 
 
@@ -249,8 +249,6 @@ if ($conn->query($ecomm) === TRUE) {
 } else {
 	echo "Error using database. " . $conn->error;
 }
-
-require_once 'PHPMailer/PHPMailerAutoload.php';
 
 ?>
 <html>

@@ -20,8 +20,8 @@
 		<nav>
 			<a href="index.php">HOME</a>
 			<a href="purchase.php">SHOP</a>
-			<a href="about_us.html">ABOUT US</a>
-			<a href="sign_in.html">SIGN IN</a>
+			<a href="about_us.php">ABOUT US</a>
+			<a href="sign_in.php">SIGN IN</a>
 		</nav>
 
 		<div class="signup-page" style="padding: 20px;">
