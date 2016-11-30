@@ -15,8 +15,8 @@
             <nav>
                 <a href="home.html">HOME</a>
                 <a href="purchase.php">SHOP</a>
-                <a href="about_us.html">ABOUT US</a>
-                <a href="sign_up.html">SIGN UP</a>
+                <a href="about_us.php">ABOUT US</a>
+                <a href="sign_up.php">SIGN UP</a>
             </nav>
             <div class="aboutus-page">
                 <h4>

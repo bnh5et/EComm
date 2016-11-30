@@ -26,15 +26,32 @@ if(SANDBOX_FLAG) {
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+    <?php 
+    session_start();
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+            
+            //echo "Welcome, " . $_SESSION['username'] . "!";
+        } 
+        else {
+            //header('Location: '."index.html");
+            //echo "HELLO.";
+            header('Location: '."sign_in.php");
+            echo "You are not signed in";
+        }
+    ?>
     <div class="background">
         <div class="main-panel">
             <div class="block-design"></div>
             <img class="logo" src="./img/logo.png">
             <nav>
-                <a href="home.html">HOME</a>
-                <a href="purchase.html">SHOP</a>
-                <a href="about_us.html">ABOUT US</a>
-                <a href="sign_up.html">SIGN UP</a>
+                <a href="index.php">HOME</a>
+                <a href="purchase.php">SHOP</a>
+                <a href="about_us.php">ABOUT US</a>
+                <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true ): ?>
+                    <a href="sign_out.php">SIGN OUT</a>
+                <?php else: ?>
+                    <a href="sign_in.php">SIGN IN</a>
+                <?php endif; ?>
             </nav>
 
 
@@ -52,7 +69,7 @@ if(SANDBOX_FLAG) {
                         <table>
                             <tr><td>Textbook </td><td><input class="form-control" type="text" name="camera_amount" value="300" readonly></input></td></tr>
                             <tr><td>Tax </td><td><input class="form-control" type="text" name="tax" value="5" readonly></input> </td></tr>
-                            <tr><td>Total Amount </td><td><input class="form-control" type="text" name="total_amount" value="307" readonly></input> </td></tr>
+                            <tr><td>Total Amount </td><td><input class="form-control" type="text" name="total_amount" value="305" readonly></input> </td></tr>
                         </table>
 
                         <br/>

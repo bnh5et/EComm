@@ -13,20 +13,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<?php 
+    session_start();
+    ?>
 <div class="background">
     <div class="main-panel">
         <div class="block-design"></div>
         <img class="logo" src="./img/logo.png">
         <nav>
-            <a href="home.html">HOME</a>
+            <a href="index.php">HOME</a>
             <a href="purchase.php">SHOP</a>
-            <a href="about_us.html">ABOUT US</a>
-            <a href="sign_up.html">SIGN UP</a>
+            <a href="about_us.php">ABOUT US</a>
+            <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === false ): ?>
+                <a href="sign_in.php">SIGN IN</a>
+            <?php else: ?>
+                <a href="sign_out.php">SIGN OUT</a>
+            <?php endif; ?>
         </nav>
         <div class="aboutus-page">
-            <!--<div class="button-container">
-                <button>Sign Up Now</button>
-            </div>-->
+            <div class="button-box">
+                <a href="sign_up.php">SIGN UP</a>
+            </div>
             <div>
                 <div class="info-box">
                     <h4>What we do...</h4>
@@ -34,7 +41,7 @@
                         and paying incredibly high prices for eTextbooks. Then we created TextTrade to solve our problems.
                         TextTrade provides a platform for re-selling used eTextbooks online.</p>
                 </div>
-                <div class="info-box" style="float:right; top: 50%; transform: translate(0, -50%);">
+                <div class="info-box" style="float:right; top: 50%; transform: translate(0, -75%);">
                     <h4>Our values...</h4>
                     <p>We believe that textbook publishers profit too much off of college students. After tuition, the last
                         thing students need is more costs. We created our site so students can learn without having to go even

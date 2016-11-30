@@ -16,19 +16,17 @@
 <div class="background">
 	<div class="main-panel">
 		<div class="block-design"></div>
-
 		<img class="logo" src="./img/logo.png">
-
 		<nav>
-			<a href="home.html">HOME</a>
+			<a href="index.php">HOME</a>
 			<a href="purchase.php">SHOP</a>
-			<a href="about_us.html">ABOUT US</a>
-			<a href="sign_up.html">SIGN UP</a>
+			<a href="about_us.php">ABOUT US</a>
+			<a href="sign_in.php">SIGN IN</a>
 		</nav>
 
-		<div class="signup-page">
-			<form action="createNewAccount.php" method="post" onsubmit="return ccNumber()">
-				<h3>Personal Information</h3>
+		<div class="signup-page" style="padding: 20px;">
+			<h3 style="text-align: center;">SIGN UP</h3>
+			<form action="createNewAccount.php" method="post">
 				<p>Name:</p><input type="text" name="name" id="name" size="50">
 				<p></p>
 				<p>Email Address:</p><input type="text" name="email" id="email" size="50">
@@ -44,7 +42,7 @@
 				<p>City:</p><input type="text" name="city" id="city" size="50">
 				<p></p>
 				<div class="form-group">
-					<label for="state">State:</label>
+					<label for="state" style="font-weight: normal">State:</label>
 					<select class="form-control" name="state" id="state" style="max-height: 50px; max-width: 400px;">
 						<option value="AL">Alabama</option>
 						<option value="AK">Alaska</option>
@@ -106,7 +104,7 @@
 				<p></p>
 				<p>Expiration Date:</p><input type="text" name="exp" id="exp" size="50">
 				<p></p>
-				<p>Security Code:</p><input type="text" name="security" id="name" size="50">
+				<p>Security Code:</p><input type="text" name="security" id="security" size="50">
 				<p></p>
 				<input type="Submit" value="Submit">
 			</form>
