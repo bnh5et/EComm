@@ -42,7 +42,8 @@
         $name = $_SESSION['username'];
         $credits = $_SESSION['credit'];
         print '<center>
-        <h2>PURCHASE CREDITS</h2>
+        <h2>Purchase Credits</h2>
+        <br>
         <button style="height:100px;width:200px">
                 <center><a href="purchasefive.php">5 CREDITS</a></center>
         </button>

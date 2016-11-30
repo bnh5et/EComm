@@ -79,24 +79,31 @@
                 Total Amount: <?php echo($finalAmount);?> &nbsp;  <?php echo($currency);?> <br/>
             </h4>
             <br/>
-            Return to <a href="index.php">home page</a>.
+                <div class="button-box">
+                    <a href="home.php">RETURN HOME</a>
+                </div>
         </div>
         <div class="col-md-4"></div>
     </div>
 <?php
-    $currentnumberofcredits = (int)$_SESSION['credit'] + (int)$finalAmount / 10;
-    $sql = "UPDATE user
-            SET credits = '$currentnumberofcredits',
-            WHERE username = '$_SESSION['username']';";
-    if ($conn->query($sql) === TRUE) {
-        echo $currentnumberofcredits." credits have been added to your account.";
-    }
-    else {
-        echo "Something went wrong.";
-    }
-    if (session_id() !== "") {
-               session_unset();
-               session_destroy();
-            }
+
+$con = mysqli_connect($servername, $user_name, $password, "ecomm");
+
+
+$currentnumberofcredits = (int)$_SESSION['credit'] + (int)$finalAmount / 10;
+$user = $_SESSION['username'];
+$sql = "UPDATE user
+        SET credits = '$currentnumberofcredits',
+        WHERE username = '$user';";
+if ($con->query($sql) === TRUE) {
+    echo $currentnumberofcredits." credits have been added to your account.";
+}
+else {
+    echo "Something went wrong.";
+}
+if (session_id() !== "") {
+    session_unset();
+    session_destroy();
+}
 ?>
 

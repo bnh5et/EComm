@@ -64,24 +64,14 @@ if(SANDBOX_FLAG) {
 
                 <div>
                     <h3> Pricing Details </h3>
-                    <form action="startPayment.php" method="POST">
-                        <input type="text" name="csrf" value="<?php echo($_SESSION['csrf']);?>" hidden readonly/>
-                        <table>
-                            <tr><td>Textbook </td><td><input class="form-control" type="text" name="camera_amount" value="300" readonly></input></td></tr>
-                            <tr><td>Tax </td><td><input class="form-control" type="text" name="tax" value="5" readonly></input> </td></tr>
-                            <tr><td>Total Amount </td><td><input class="form-control" type="text" name="total_amount" value="305" readonly></input> </td></tr>
-                        </table>
-
-                        <br/>
-
-                        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="HZL8V6JSWSZQE">
-                            <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                            <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                        </form>
-
+                    <form action="creditDeduct.php" method="POST">
+                        Total Credits: <input name="credits" type="text" value="35" readonly>
+                        <p></p>
+                        <input type="submit" value="Purchase">
                     </form>
+                    <div class="button-box" style="width: 240px; margin-left: calc(50% - 120px);">
+                        <a href="credit.php">BUY MORE CREDITS</a>
+                    </div>
                 </div>
             </div>
         </div>
