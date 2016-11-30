@@ -34,7 +34,14 @@
 	           
 
         </nav>
+
+    <?php
+        $name = $_SESSION['username'];
+        $credits = $_SESSION['credit'];
+    	print '<h1>Welcome aboard, '.$name.'!</h1>
+        <h2>You currently have '.$credits.' credits.</h2>';
+    ?>
+
+</div>
+</div>
 </body>
-<?php
-	echo $_SESSION['username'];
-	?>

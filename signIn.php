@@ -27,7 +27,7 @@ if ($result->num_rows > 0)
 	echo "Welcome, $checkusername! You have successfully connected to MySQL! Sadly, nothing else
 	has actually been implemented yet!";
 	$_SESSION['username'] = $checkusername;
-	//$_SESSION['type'] = $row['user_type'];
+	$_SESSION['credit'] = $row['credits'];
 	$_SESSION['password'] = $checkpassword;
 	$_SESSION['loggedin'] = true;
 	echo $_SESSION['password'];

@@ -77,14 +77,14 @@ $username = $_POST['username'];
 
 $query_username = "SELECT * FROM user WHERE username = '$username'";
 $checkUserName = mysqli_query($conn, $query_username);
-
+/*
 if (mysqli_num_rows($checkUserName) > 0) {
 	$validform = False;
 	echo "Username already exists.";
 }
 
 $checkUserName->close();
-
+*/
 
 //Is the password valid?
 $password = $_POST['password'];
@@ -209,7 +209,7 @@ if ($conn->query($ecomm) === TRUE) {
 	}
 	else {
 		$creditcardnumber = (int) $ccNumber;
-		$sql = "INSERT INTO user (username, firstname, lastname, password, email, address, city, state, zip, ccNumber, exp, security) VALUES ('$username', '$firstname', '$lastname', '$password', '$email', '$address', '$city', '$state', '$zip', '$ccNumber', '$exp', '$security');";
+		$sql = "INSERT INTO user (credits, username, firstname, lastname, password, email, address, city, state, zip, ccNumber, exp, security) VALUES (0, '$username', '$firstname', '$lastname', '$password', '$email', '$address', '$city', '$state', '$zip', '$ccNumber', '$exp', '$security');";
 		if ($conn->query($sql) === TRUE) {
 			echo "You have been registered! Welcome aboard, $firstname!".'<br>';
 
