@@ -15,6 +15,9 @@
 <body>
 <?php 
     session_start();
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true ) {
+            header('Location: '."home.php");
+    }
     ?>
 <div class="background">
     <div class="main-panel">

@@ -25,6 +25,8 @@ DROP TABLE IF EXISTS `textbook`;
 CREATE TABLE `textbook` (
   `isbn` int(12) NOT NULL,
   `subject` varchar(45) DEFAULT NULL,
+  `creditcost` int(3) DEFAULT NULL,
+  `numberInCirculation` int(10) DEFAULT NULL,
   PRIMARY KEY (`isbn`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -58,6 +60,7 @@ CREATE TABLE `user` (
   `exp` varchar(20) DEFAULT NULL,
   `security` int(3) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
+  `credits` int(10) DEFAULT NULL,
   PRIMARY KEY (`username`),
   UNIQUE KEY `username` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -69,7 +72,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES ('amberlee','Amber','Lee','ajl4cf@gmail.com','123 Yoda Road','Hellokitty','AL',12345,'1234123412341234','5/19',123,NULL),('athens','Amber','Lee','holymoly@gmail.com','123 Yes Street','Brake','AL',12345,'1234123412341234','5/17',566,NULL),('passwordtester','Password','Tester','passwordtester@yahoo.com','123 Droly Lane','Puck','AK',22222,'1234123412341234','6/19',123,'password');
+INSERT INTO `user` VALUES ('amberlee','Amber','Lee','ajl4cf@gmail.com','123 Yoda Road','Hellokitty','AL',12345,'1234123412341234','5/19',123,NULL,NULL),('athens','Amber','Lee','holymoly@gmail.com','123 Yes Street','Brake','AL',12345,'1234123412341234','5/17',566,NULL,NULL),('credittester','Credit','Tester','credittester@yahoo.com','123 Droly Lane','Puck','AK',22222,'1234123412341234','9/20',123,'password',0),('passwordtester','Password','Tester','passwordtester@yahoo.com','123 Droly Lane','Puck','AK',22222,'1234123412341234','6/19',123,'password',NULL);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -82,4 +85,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-11-29 17:47:10
+-- Dump completed on 2016-11-29 19:25:10

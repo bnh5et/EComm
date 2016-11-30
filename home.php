@@ -38,8 +38,14 @@
     <?php
         $name = $_SESSION['username'];
         $credits = $_SESSION['credit'];
-    	print '<h1>Welcome aboard, '.$name.'!</h1>
-        <h2>You currently have '.$credits.' credits.</h2>';
+    	print '<center><h1>Welcome aboard, '.$name.'!</h1>
+        <h2>You currently have '.$credits.' credits.</h2>
+        <button style="height:100px;width:200px">
+                <center><a href="purchase.php">PURCHASE MORE CREDIT</a></center>
+        </button>
+        </center>
+        <br>
+        ';
     ?>
 
 </div>

@@ -27,7 +27,7 @@ if(SANDBOX_FLAG) {
     </head>
     <body>
     <?php 
-    session_start();
+    //session_start();
     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
             
             //echo "Welcome, " . $_SESSION['username'] . "!";
