@@ -15,12 +15,24 @@ button {
     text-align: center;
 }
 
-a{
+.button-box {
     display: block;
-    text-decoration: none;
     background-color: slategray;
-    width: 80px;
-    height: 40px;
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    margin-left: calc(50% - 80px);
+    padding-top: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+a:hover {
+    text-decoration: none;
     color: white;
 }
 
