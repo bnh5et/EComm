@@ -5,7 +5,7 @@
     $servername = "localhost";
     $user_name = "root";
     $password = "";
-    $conn = new mysqli($servername, $user_name, $password);
+    //$conn = new mysqli($servername, $user_name, $password);
 
 // Check connection
     if ($conn->connect_error) {
@@ -88,7 +88,9 @@ $con = mysqli_connect($servername, $user_name, $password, "ecomm");
 
 
 $currentnumberofcredits = (int)$_SESSION['credit'] + (int)$finalAmount / 10;
+//echo $currentnumberofcredits;
 $user = $_SESSION['username'];
+//echo $user;
 $sql = "UPDATE user
         SET credits = '$currentnumberofcredits'
         WHERE username = '$user';";
@@ -96,7 +98,7 @@ if ($con->query($sql) === TRUE) {
     echo $currentnumberofcredits." credits are in your account.";
 }
 else {
-    echo "Something went wrong.";
+    echo $con->error;
 }
 if (session_id() !== "") {
     session_unset();
