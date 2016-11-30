@@ -254,7 +254,7 @@ require_once 'PHPMailer/PHPMailerAutoload.php';
 
 ?>
 <html>
-<form action="sign_up.html">
+<form action="sign_up.php">
 	<input type="submit" value="Back" />
 </form>
 </html>
