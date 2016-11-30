@@ -24,7 +24,7 @@
             <a href="index.php">HOME</a>
             <a href="purchase.php">SHOP</a>
             <a href="about_us.php">ABOUT US</a>
-            <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === false ): ?>
+            <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true ): ?>
                 <a href="sign_in.php">SIGN IN</a>
             <?php else: ?>
                 <a href="sign_out.php">SIGN OUT</a>
