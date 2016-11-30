@@ -37,20 +37,28 @@
 	           
 
         </nav>
-
+        
     <?php
         $name = $_SESSION['username'];
         $credits = $_SESSION['credit'];
-    	print '<center><h1>Welcome aboard, '.$name.'!</h1>
-        <h2>You currently have '.$credits.' credits.</h2>
+        print '<center>
+        <h2>PURCHASE CREDITS</h2>
         <button style="height:100px;width:200px">
-                <center><a href="credit.php">PURCHASE MORE CREDIT</a></center>
+                <center><a href="purchasefive.php">5 CREDITS</a></center>
+        </button>
+        <button style="height:100px;width:200px">
+                <center><a href="purchaseten.php">10 CREDITS</a></center>
+        </button>
+        <button style="height:100px;width:200px">
+                <center><a href="purchasetwentyfive.php">25 CREDITS</a></center>
+        </button>
+        <button style="height:100px;width:200px">
+                <center><a href="purchasefifty.php">50 CREDITS</a></center>
         </button>
         </center>
         <br>
         ';
     ?>
-
-</div>
-</div>
-</body>
+    </div>
+        </div>
+        </body>
