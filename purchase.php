@@ -28,6 +28,16 @@ if(SANDBOX_FLAG) {
     <body>
     <?php 
     session_start();
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+            
+            //echo "Welcome, " . $_SESSION['username'] . "!";
+        } 
+        else {
+            //header('Location: '."index.html");
+            //echo "HELLO.";
+            header('Location: '."sign_in.html");
+            echo "You are not signed in";
+        }
     ?>
     <div class="background">
         <div class="main-panel">
