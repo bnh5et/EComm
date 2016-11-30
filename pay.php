@@ -99,13 +99,16 @@ $sql = "UPDATE user
         WHERE username = '$user';";
 if ($con->query($sql) === TRUE) {
     echo $currentnumberofcredits." credits have been added to your account.";
+    $_SESSION['credit'] = $currentnumberofcredits;
 }
 else {
     echo $con->error;
 }
 if (session_id() !== "") {
-    session_unset();
-    session_destroy();
+    //session_unset();
+    //session_destroy();
+    unset($_SESSION['paymentId']);
+    unset($_SESSION['PayerID']);
 }
 ?>
 
