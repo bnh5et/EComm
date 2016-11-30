@@ -35,7 +35,7 @@ if(SANDBOX_FLAG) {
         else {
             //header('Location: '."index.html");
             //echo "HELLO.";
-            header('Location: '."sign_in.html");
+            header('Location: '."sign_in.php");
             echo "You are not signed in";
         }
     ?>

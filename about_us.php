@@ -31,7 +31,6 @@
             <?php endif; ?>
         </nav>
         <div class="aboutus-page">
-            <a href="sign_up.html" class="button-display">SIGN UP</a>
             <div>
                 <div class="info-box">
                     <h4>What we do...</h4>

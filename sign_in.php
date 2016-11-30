@@ -46,7 +46,7 @@
             </div>
             <div class="signin" style="width: 50%; display: inline-block; float: right; padding-left: 20px;">
                 <h3 style="text-align: center;">Don't have an account?</h3>
-                <a href="sign_up.html" class="button-display">SIGN UP</a>
+                <a href="sign_up.php" class="button-display">SIGN UP</a>
             </div>
 
         </div>
