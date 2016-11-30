@@ -79,9 +79,6 @@
                 Total Amount: <?php echo($finalAmount);?> &nbsp;  <?php echo($currency);?> <br/>
             </h4>
             <br/>
-                <div class="button-box">
-                    <a href="home.php">RETURN HOME</a>
-                </div>
         </div>
         <div class="col-md-4"></div>
     </div>
@@ -93,10 +90,10 @@ $con = mysqli_connect($servername, $user_name, $password, "ecomm");
 $currentnumberofcredits = (int)$_SESSION['credit'] + (int)$finalAmount / 10;
 $user = $_SESSION['username'];
 $sql = "UPDATE user
-        SET credits = '$currentnumberofcredits',
+        SET credits = '$currentnumberofcredits'
         WHERE username = '$user';";
 if ($con->query($sql) === TRUE) {
-    echo $currentnumberofcredits." credits have been added to your account.";
+    echo $currentnumberofcredits." credits are in your account.";
 }
 else {
     echo "Something went wrong.";
@@ -106,4 +103,10 @@ if (session_id() !== "") {
     session_destroy();
 }
 ?>
+
+<html>
+<form action="home.php">
+    <input type="submit" value="Back" />
+</form>
+</html>
 
