@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c18c13dd-817f-4790-b768-3abbcbf54d5c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about_us.html" afterPath="$PROJECT_DIR$/about_us.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sign_in.html" afterPath="$PROJECT_DIR$/sign_in.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles.css" afterPath="$PROJECT_DIR$/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
     </list>
     <ignored path="my-proj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,50 +29,48 @@
     <splitter split-orientation="horizontal" split-proportion="0.51061946">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="sign_up.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sign_up.html">
+          <file leaf-file-name="purchase.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/purchase.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+                <state relative-caret-position="555">
+                  <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/styles.css">
+          <file leaf-file-name="about_us.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/about_us.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+                <state relative-caret-position="495">
+                  <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="sign_in.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sign_in.html">
+          <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/home.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="645">
-                  <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+                <state relative-caret-position="314">
+                  <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
                   <folding>
-                    <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <marker date="1480525422000" expanded="true" signature="1446:1468" ph="..." />
+                    <marker date="1480525422000" expanded="true" signature="1469:1522" ph="..." />
+                    <marker date="1480525422000" expanded="true" signature="1535:1602" ph="..." />
+                    <marker date="1480525422000" expanded="true" signature="1624:1646" ph="..." />
+                    <marker date="1480525422000" expanded="true" signature="1647:1726" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="about_us.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/about_us.html">
+          <file leaf-file-name="cancel.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/cancel.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="28" selection-end-column="18" />
-                  <folding>
-                    <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
+                <state relative-caret-position="240">
+                  <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -83,12 +79,35 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="createNewAccount.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="sign_in.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sign_in.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="517">
+                  <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sign_out.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sign_out.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="createNewAccount.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/createNewAccount.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="15" />
-                  <folding />
+                <state relative-caret-position="3840">
+                  <caret line="256" column="25" selection-start-line="256" selection-start-column="25" selection-end-line="256" selection-end-column="25" />
+                  <folding>
+                    <marker date="1480524719000" expanded="true" signature="1631:1678" ph="SELECT * FRO... user" />
+                    <marker date="1480524719000" expanded="true" signature="5308:5581" ph="INSERT INTO user... " />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -98,9 +117,7 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="555">
                   <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-                  <folding>
-                    <marker date="1480462848000" expanded="true" signature="390:472" ph="SELECT * FRO... user" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -149,15 +166,20 @@
         <option value="$PROJECT_DIR$/sign_up.component.html" />
         <option value="$PROJECT_DIR$/placeOrder.php" />
         <option value="$PROJECT_DIR$/pay.php" />
-        <option value="$PROJECT_DIR$/createNewAccount.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/purchase.html" />
-        <option value="$PROJECT_DIR$/purchase.php" />
-        <option value="$PROJECT_DIR$/sign_up.html" />
         <option value="$PROJECT_DIR$/signIn.php" />
         <option value="$PROJECT_DIR$/about_us.html" />
         <option value="$PROJECT_DIR$/sign_in.html" />
         <option value="$PROJECT_DIR$/styles.css" />
+        <option value="$PROJECT_DIR$/about_us.php" />
+        <option value="$PROJECT_DIR$/cancel.php" />
+        <option value="$PROJECT_DIR$/purchase.html" />
+        <option value="$PROJECT_DIR$/sign_up.html" />
+        <option value="$PROJECT_DIR$/purchase.php" />
+        <option value="$PROJECT_DIR$/createNewAccount.php" />
+        <option value="$PROJECT_DIR$/sign_out.php" />
+        <option value="$PROJECT_DIR$/sign_in.php" />
+        <option value="$PROJECT_DIR$/home.php" />
       </list>
     </option>
   </component>
@@ -199,8 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -221,6 +241,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,6 +354,8 @@
       <workItem from="1480451992781" duration="763000" />
       <workItem from="1480462864794" duration="879000" />
       <workItem from="1480466537318" duration="223000" />
+      <workItem from="1480524552287" duration="409000" />
+      <workItem from="1480524978536" duration="485000" />
     </task>
     <task id="LOCAL-00001" summary="Template with about us and home page">
       <created>1474334335812</created>
@@ -368,18 +392,32 @@
       <option name="project" value="LOCAL" />
       <updated>1480452055127</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Removed html files">
+      <created>1480524734959</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1480524734959</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixed sign up button">
+      <created>1480525034480</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1480525034480</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46594000" />
+    <option name="totallyTimeSpent" value="47488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="13" y="23" width="1423" height="818" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17089453" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20590302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17089453" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20590302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -395,7 +433,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843792" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -418,7 +456,9 @@
     <MESSAGE value="Added sign-in page&#10;" />
     <MESSAGE value="Updated sign-in page" />
     <MESSAGE value="Separate sign-in and sign-up pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Separate sign-in and sign-up pages" />
+    <MESSAGE value="Removed html files" />
+    <MESSAGE value="Fixed sign up button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed sign up button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -427,18 +467,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/about_us.component.html" />
-    <entry file="file://$PROJECT_DIR$/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/about_us.component.html" />
-    <entry file="file://$PROJECT_DIR$/systemjs.config.js" />
-    <entry file="file://$PROJECT_DIR$/app.component.html" />
-    <entry file="file://$PROJECT_DIR$/app/app.module.js" />
     <entry file="file://$PROJECT_DIR$/index.php" />
     <entry file="file://$PROJECT_DIR$/about_us.component.html" />
     <entry file="file://$PROJECT_DIR$/systemjs.config.js" />
@@ -523,75 +551,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/purchase.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/purchase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sign_up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sign_in.html" />
+    <entry file="file://$PROJECT_DIR$/about_us.html" />
+    <entry file="file://$PROJECT_DIR$/signIn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sign_in.html">
+    <entry file="file://$PROJECT_DIR$/cancel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about_us.html">
+    <entry file="file://$PROJECT_DIR$/purchase.html" />
+    <entry file="file://$PROJECT_DIR$/home.html" />
+    <entry file="file://$PROJECT_DIR$/sign_up.html" />
+    <entry file="file://$PROJECT_DIR$/purchase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="28" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="555">
+          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sign_out.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/createNewAccount.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="15" />
+        <state relative-caret-position="3840">
+          <caret line="256" column="25" selection-start-line="256" selection-start-column="25" selection-end-line="256" selection-end-column="25" />
+          <folding>
+            <marker date="1480524719000" expanded="true" signature="1631:1678" ph="SELECT * FRO... user" />
+            <marker date="1480524719000" expanded="true" signature="5308:5581" ph="INSERT INTO user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sign_in.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signIn.php">
+    <entry file="file://$PROJECT_DIR$/about_us.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="495">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
           <folding>
-            <marker date="1480462848000" expanded="true" signature="390:472" ph="SELECT * FRO... user" />
+            <marker date="1480525422000" expanded="true" signature="1446:1468" ph="..." />
+            <marker date="1480525422000" expanded="true" signature="1469:1522" ph="..." />
+            <marker date="1480525422000" expanded="true" signature="1535:1602" ph="..." />
+            <marker date="1480525422000" expanded="true" signature="1624:1646" ph="..." />
+            <marker date="1480525422000" expanded="true" signature="1647:1726" ph="..." />
           </folding>
         </state>
       </provider>
