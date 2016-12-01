@@ -97,6 +97,7 @@ $con->close();
 //Is the password valid?
 $password = $_POST['password'];
 $password2 = $_POST['password2'];
+$hash = password_hash($password, PASSWORD_BCRYPT);
 if (strcmp($password, $password2) != 0) {
 	$validform = False;
 	echo "The passwords don't match."."<br>";
@@ -217,7 +218,7 @@ if ($conn->query($ecomm) === TRUE) {
 	}
 	else {
 		$creditcardnumber = (int) $ccNumber;
-		$sql = "INSERT INTO user (credits, username, firstname, lastname, password, email, address, city, state, zip, ccNumber, exp, security) VALUES (0, '$username', '$firstname', '$lastname', '$password', '$email', '$address', '$city', '$state', '$zip', '$ccNumber', '$exp', '$security');";
+		$sql = "INSERT INTO user (credits, username, firstname, lastname, password, email, address, city, state, zip, ccNumber, exp, security) VALUES (0, '$username', '$firstname', '$lastname', '$hash', '$email', '$address', '$city', '$state', '$zip', '$ccNumber', '$exp', '$security');";
 		if ($conn->query($sql) === TRUE) {
 			echo "You have been registered! Welcome aboard, $firstname!".'<br>';
 
