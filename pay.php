@@ -79,9 +79,6 @@
                 Total Amount: <?php echo($finalAmount);?> &nbsp;  <?php echo($currency);?> <br/>
             </h4>
             <br/>
-                <div class="button-box">
-                    <a href="home.php">RETURN HOME</a>
-                </div>
         </div>
         <div class="col-md-4"></div>
     </div>
@@ -98,7 +95,7 @@ $sql = "UPDATE user
         SET credits = '$currentnumberofcredits'
         WHERE username = '$user';";
 if ($con->query($sql) === TRUE) {
-    echo $currentnumberofcredits." credits have been added to your account.";
+    echo $currentnumberofcredits." credits are in your account.";
     $_SESSION['credit'] = $currentnumberofcredits;
 }
 else {
@@ -111,4 +108,10 @@ if (session_id() !== "") {
     unset($_SESSION['PayerID']);
 }
 ?>
+
+<html>
+<form action="home.php">
+    <input type="submit" value="Back" />
+</form>
+</html>
 
